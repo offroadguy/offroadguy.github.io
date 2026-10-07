@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="2100" viewBox="0 0 2560 2100"><title>Enterprise GenAI Platform Architecture</title><desc>Sanitized architecture showing enterprise use cases, AWS application and GPU model-serving EKS clusters, document ingestion, retrieval stores, Vertex AI Gemini, GitOps delivery and SRE ownership.</desc>
+<rect x="0" y="0" width="2560" height="2100" rx="0" fill="#F6F9FC" stroke="#F6F9FC" stroke-width="2"/>
+<rect x="0" y="0" width="2560" height="12" rx="0" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="40" y="65" fill="#183349" font-family="Arial, sans-serif" font-size="40" font-weight="700">ENTERPRISE GENAI PLATFORM</text>
+<text x="40" y="104" fill="#007F87" font-family="Arial, sans-serif" font-size="25" font-weight="700">AI ingestion, inference &amp; tooling SRE  +  Distributed Systems SME</text>
+<text x="40" y="133" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Venkata Ganji | Platform engineering and production ownership | Sanitized portfolio architecture</text>
+<text x="425" y="166" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">ENTERPRISE EXPERIENCES</text>
+<rect x="425" y="181" width="415" height="100" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="425" y="181" width="6" height="100" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="445" y="214" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Incident intelligence</text>
+<text x="445" y="245" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Ticket suggestions</text>
+<text x="445" y="273" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Related incidents / CI context</text>
+<rect x="865" y="181" width="415" height="100" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="865" y="181" width="6" height="100" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="885" y="214" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Enterprise chat</text>
+<text x="885" y="245" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Grounded answers</text>
+<text x="885" y="273" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Enterprise knowledge access</text>
+<rect x="1305" y="181" width="415" height="100" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1305" y="181" width="6" height="100" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="1325" y="214" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Document Q&amp;A</text>
+<text x="1325" y="245" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Document upload</text>
+<text x="1325" y="273" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Semantic querying / retrieval</text>
+<rect x="1745" y="181" width="415" height="100" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1745" y="181" width="6" height="100" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="1765" y="214" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Coding &amp; task agents</text>
+<text x="1765" y="245" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Java / Python tooling</text>
+<text x="1765" y="273" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Enterprise tool integrations</text>
+<rect x="395" y="309" width="1775" height="1075" rx="20" fill="#EDF4FA" stroke="#B5CDDF" stroke-width="2"/>
+<text x="420" y="342" fill="#2563A6" font-family="Arial, sans-serif" font-size="24" font-weight="700">AWS  |  CORE PLATFORM</text>
+<rect x="425" y="363" width="1140" height="793" rx="15" fill="#F8FCFD" stroke="#77B6BC" stroke-width="2"/>
+<text x="447" y="394" fill="#007F87" font-family="Arial, sans-serif" font-size="22" font-weight="700">A  APPLICATION EKS  |  INGESTION + INFERENCE SERVICES</text>
+<rect x="1595" y="363" width="550" height="655" rx="15" fill="#FBF9FE" stroke="#B6A4D4" stroke-width="2"/>
+<text x="1617" y="397" fill="#7254AE" font-family="Arial, sans-serif" font-size="23" font-weight="700">B  GPU MODEL-SERVING EKS</text>
+<text x="447" y="1365" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">DATA SERVICES  |  LOGICAL BACKENDS; PLACEMENT VARIES BY SERVICE</text>
+<rect x="450" y="421" width="1090" height="63" rx="10" fill="#E6F2F3" stroke="#BADBDE" stroke-width="2"/>
+<text x="470" y="449" fill="#007F87" font-family="Arial, sans-serif" font-size="21" font-weight="700">PLATFORM API + IDENTITY / AUTHORIZATION</text>
+<text x="470" y="474" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Tenant-aware access  |  request routing  |  application integrations</text>
+<path d="M 1270,281 L 1270,421" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1270,421 1265.7163982346049,410.8683290659683 1274.2836017653951,410.8683290659683" fill="#007F87"/>
+<text x="1290" y="320" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Requests / uploads</text>
+<text x="40" y="400" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">ENTERPRISE DATA</text>
+<rect x="40" y="421" width="320" height="164" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="40" y="421" width="6" height="164" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="60" y="454" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Sources &amp; uploads</text>
+<text x="60" y="485" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Box / shared folders</text>
+<text x="60" y="513" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Knowledge / wiki systems</text>
+<text x="60" y="541" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Internal services / APIs</text>
+<text x="60" y="569" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">User-uploaded documents</text>
+<rect x="40" y="623" width="320" height="137" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="40" y="623" width="6" height="137" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="60" y="656" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Connector capabilities</text>
+<text x="60" y="687" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Polling / synchronization</text>
+<text x="60" y="715" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Document access context</text>
+<text x="60" y="743" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Batch and API ingestion</text>
+<text x="40" y="794" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Business use cases and source scope</text>
+<text x="40" y="817" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">include user-described integrations.</text>
+<text x="450" y="523" fill="#007F87" font-family="Arial, sans-serif" font-size="20" font-weight="700">1  INGEST  /  TRANSFORM  /  INDEX</text>
+<rect x="450" y="548" width="250" height="111" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="450" y="548" width="6" height="111" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="470" y="581" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Connect &amp; stage</text>
+<text x="470" y="612" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Connector / ingestion APIs</text>
+<text x="470" y="640" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Document registration</text>
+<rect x="730" y="548" width="250" height="111" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="730" y="548" width="6" height="111" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="750" y="581" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Parse &amp; normalize</text>
+<text x="750" y="612" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">PDF / office / media</text>
+<text x="750" y="640" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Extraction / conversion</text>
+<rect x="1010" y="548" width="250" height="111" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1010" y="548" width="6" height="111" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="1030" y="581" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Chunk &amp; enrich</text>
+<text x="1030" y="612" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Chunking / metadata</text>
+<text x="1030" y="640" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Embedding requests</text>
+<rect x="1290" y="548" width="250" height="111" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1290" y="548" width="6" height="111" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="1310" y="581" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Embed &amp; index</text>
+<text x="1310" y="612" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Embedding / vector service</text>
+<text x="1310" y="640" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Index writer / updates</text>
+<path d="M 360,505 L 403,505 L 403,588 L 450,588" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="450,588 439.8683290659683,592.2836017653951 439.8683290659683,583.7163982346049" fill="#007F87"/>
+<path d="M 700,601 L 730,601" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="730,601 719.8683290659683,605.2836017653951 719.8683290659683,596.7163982346049" fill="#007F87"/>
+<path d="M 980,601 L 1010,601" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1010,601 999.8683290659683,605.2836017653951 999.8683290659683,596.7163982346049" fill="#007F87"/>
+<path d="M 1260,601 L 1290,601" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1290,601 1279.8683290659683,605.2836017653951 1279.8683290659683,596.7163982346049" fill="#007F87"/>
+<rect x="450" y="699" width="1090" height="69" rx="10" fill="#EDF1FA" stroke="#CBD6EC" stroke-width="2"/>
+<text x="470" y="729" fill="#2563A6" font-family="Arial, sans-serif" font-size="21" font-weight="700">KAFKA  |  STRIMZI-MANAGED EVENT BACKBONE</text>
+<text x="470" y="755" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Platform events / configuration distribution; asynchronous coordination shown logically</text>
+<path d="M 570,659 L 570,699" fill="none" stroke="#2563A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<polygon points="570,699 565.7163982346049,688.8683290659683 574.2836017653951,688.8683290659683" fill="#2563A6"/>
+<path d="M 1135,659 L 1135,699" fill="none" stroke="#2563A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<polygon points="1135,699 1130.7163982346049,688.8683290659683 1139.2836017653951,688.8683290659683" fill="#2563A6"/>
+<path d="M 1000,768 L 1000,824" fill="none" stroke="#2563A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<polygon points="1000,824 995.7163982346049,813.8683290659683 1004.2836017653951,813.8683290659683" fill="#2563A6"/>
+<text x="450" y="806" fill="#007F87" font-family="Arial, sans-serif" font-size="20" font-weight="700">2  RETRIEVE  /  ORCHESTRATE  /  GENERATE</text>
+<rect x="450" y="834" width="340" height="138" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="450" y="834" width="6" height="138" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="470" y="867" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Orchestration &amp; agents</text>
+<text x="470" y="898" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">RAG / conversation workflows</text>
+<text x="470" y="926" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Java + Python agent runtimes</text>
+<text x="470" y="954" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">MCP / plugins / enterprise tools</text>
+<rect x="830" y="834" width="330" height="138" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="830" y="834" width="6" height="138" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="850" y="867" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Retrieval service</text>
+<text x="850" y="898" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Vector / keyword search</text>
+<text x="850" y="926" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Embedding + reranker adapters</text>
+<text x="850" y="954" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Context assembly / content APIs</text>
+<rect x="1200" y="834" width="340" height="138" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1200" y="834" width="6" height="138" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="1220" y="867" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Model gateway / routing</text>
+<text x="1220" y="898" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Unified model-facing APIs</text>
+<text x="1220" y="926" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Provider adapters / selection</text>
+<text x="1220" y="954" fill="#526879" font-family="Arial, sans-serif" font-size="19" font-weight="400">Generation + embedding calls</text>
+<path d="M 790,894 L 830,894" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="830,894 819.8683290659683,898.2836017653951 819.8683290659683,889.7163982346049" fill="#007F87"/>
+<polygon points="790,894 800.1316709340317,889.7163982346049 800.1316709340317,898.2836017653951" fill="#007F87"/>
+<path d="M 620,972 L 620,1010 L 1370,1010 L 1370,972" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1370,972 1374.2836017653951,982.1316709340317 1365.7163982346049,982.1316709340317" fill="#7254AE"/>
+<polygon points="620,972 624.2836017653951,982.1316709340317 615.7163982346049,982.1316709340317" fill="#7254AE"/>
+<text x="760" y="1001" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Model invocation / generated response</text>
+<path d="M 450,452 L 437,452 L 437,891 L 450,891" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="450,891 439.8683290659683,895.2836017653951 439.8683290659683,886.7163982346049" fill="#007F87"/>
+<path d="M 1540,623 L 1552,623 L 1552,805 L 1370,805 L 1370,834" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<polygon points="1370,834 1365.7163982346049,823.8683290659683 1374.2836017653951,823.8683290659683" fill="#7254AE"/>
+<rect x="450" y="1072" width="650" height="58" rx="10" fill="#E6F2F3" stroke="#BADBDE" stroke-width="2"/>
+<text x="470" y="1097" fill="#007F87" font-family="Arial, sans-serif" font-size="20" font-weight="700">Guardrails + policy</text>
+<text x="470" y="1121" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Safety / moderation  |  authorization  |  OPA policy manifests</text>
+<rect x="1200" y="1072" width="340" height="58" rx="10" fill="#E6F2F3" stroke="#BADBDE" stroke-width="2"/>
+<text x="1216" y="1097" fill="#007F87" font-family="Arial, sans-serif" font-size="20" font-weight="700">Platform support</text>
+<text x="1216" y="1121" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Memory / evaluation / catalog</text>
+<rect x="1620" y="421" width="500" height="94" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1620" y="421" width="6" height="94" rx="2" fill="#7254AE" stroke="#7254AE" stroke-width="2"/>
+<text x="1640" y="454" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Artifact loader + integrity</text>
+<text x="1640" y="485" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">PreSync / pre-upgrade staging; checksum validation</text>
+<rect x="1620" y="553" width="500" height="94" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1620" y="553" width="6" height="94" rx="2" fill="#7254AE" stroke="#7254AE" stroke-width="2"/>
+<text x="1640" y="586" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Shared model-weight storage</text>
+<text x="1640" y="617" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">FSx for Lustre PVC; read-only serving mounts</text>
+<rect x="1620" y="685" width="500" height="111" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1620" y="685" width="6" height="111" rx="2" fill="#7254AE" stroke="#7254AE" stroke-width="2"/>
+<text x="1640" y="718" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">GPU inference workloads</text>
+<text x="1640" y="749" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">vLLM / custom runtime images</text>
+<text x="1640" y="777" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Open-weight models + internal foundation models</text>
+<rect x="1620" y="834" width="500" height="138" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1620" y="834" width="6" height="138" rx="2" fill="#7254AE" stroke="#7254AE" stroke-width="2"/>
+<text x="1640" y="867" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Versioned model APIs</text>
+<text x="1640" y="898" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Chat / completion / embedding-compatible routes</text>
+<text x="1640" y="926" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">GPU resources / tensor parallelism / LoRA serving</text>
+<text x="1640" y="954" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Readiness / liveness probes + metrics</text>
+<path d="M 1870,515 L 1870,553" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1870,553 1865.7163982346049,542.8683290659683 1874.2836017653951,542.8683290659683" fill="#7254AE"/>
+<path d="M 1870,647 L 1870,685" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1870,685 1865.7163982346049,674.8683290659683 1874.2836017653951,674.8683290659683" fill="#7254AE"/>
+<path d="M 1870,796 L 1870,834" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1870,834 1865.7163982346049,823.8683290659683 1874.2836017653951,823.8683290659683" fill="#7254AE"/>
+<path d="M 1540,900 L 1620,900" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1620,900 1609.8683290659683,904.2836017653951 1609.8683290659683,895.7163982346049" fill="#7254AE"/>
+<polygon points="1540,900 1550.1316709340317,895.7163982346049 1550.1316709340317,904.2836017653951" fill="#7254AE"/>
+<rect x="2200" y="363" width="320" height="302" rx="15" fill="#FEFAF2" stroke="#DCC69E" stroke-width="2"/>
+<text x="2220" y="400" fill="#A46D17" font-family="Arial, sans-serif" font-size="22" font-weight="700">GCP  |  MANAGED AI</text>
+<text x="2220" y="446" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Secure provider gateway</text>
+<text x="2220" y="488" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Vertex AI</text>
+<text x="2220" y="530" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Gemini models</text>
+<text x="2220" y="587" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">Managed model access</text>
+<text x="2220" y="617" fill="#526879" font-family="Arial, sans-serif" font-size="20" font-weight="400">via provider adapter</text>
+<path d="M 1470,972 L 1470,1042 L 2360,1042 L 2360,665" fill="none" stroke="#A46D17" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2360,665 2364.2836017653954,675.1316709340317 2355.7163982346046,675.1316709340317" fill="#A46D17"/>
+<polygon points="1470,972 1474.2836017653951,982.1316709340317 1465.7163982346049,982.1316709340317" fill="#A46D17"/>
+<text x="2170" y="1068" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Managed-model API boundary</text>
+<rect x="445" y="1208" width="395" height="127" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="445" y="1208" width="6" height="127" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="465" y="1241" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">S3 + object-access wrapper</text>
+<text x="465" y="1272" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Original documents / model artifacts</text>
+<text x="465" y="1300" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Conductor-style API abstraction</text>
+<rect x="865" y="1208" width="395" height="127" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="865" y="1208" width="6" height="127" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="885" y="1241" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">SolrCloud [C] + OpenSearch</text>
+<text x="885" y="1272" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Solr: EC2 / EBS + ZooKeeper</text>
+<text x="885" y="1300" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Vector / search retrieval indexes</text>
+<rect x="1285" y="1208" width="395" height="127" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1285" y="1208" width="6" height="127" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="1305" y="1241" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Metadata / content stores</text>
+<text x="1305" y="1272" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">MongoDB + SQL metadata references</text>
+<text x="1305" y="1300" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Documents, jobs and content records</text>
+<rect x="1705" y="1208" width="420" height="127" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1705" y="1208" width="6" height="127" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="1725" y="1241" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Redis / supporting state</text>
+<text x="1725" y="1272" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Cache and service state</text>
+<text x="1725" y="1300" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Backend roles vary by component</text>
+<path d="M 500,659 L 500,678 L 410,678 L 410,1269 L 445,1269" fill="none" stroke="#2563A6" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="445,1269 434.8683290659683,1273.2836017653951 434.8683290659683,1264.7163982346049" fill="#2563A6"/>
+<text x="50" y="1260" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Original documents</text>
+<text x="50" y="1286" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">persist separately from indexes</text>
+<path d="M 1540,591 L 1578,591 L 1578,1187 L 1100,1187 L 1100,1208" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1100,1208 1095.7163982346049,1197.8683290659683 1104.2836017653951,1197.8683290659683" fill="#007F87"/>
+<text x="1250" y="1180" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Index writes</text>
+<path d="M 1160,937 L 1178,937 L 1178,1167 L 970,1167 L 970,1208" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="970,1208 965.7163982346049,1197.8683290659683 974.2836017653951,1197.8683290659683" fill="#007F87"/>
+<polygon points="1160,937 1170.1316709340317,932.7163982346049 1170.1316709340317,941.2836017653951" fill="#007F87"/>
+<text x="980" y="1161" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Search / results</text>
+<text x="1630" y="999" fill="#7254AE" font-family="Arial, sans-serif" font-size="18" font-weight="400">Weight source: S3-backed artifact storage</text>
+<text x="2200" y="1140" fill="#183349" font-family="Arial, sans-serif" font-size="19" font-weight="700">READING THE DIAGRAM</text>
+<path d="M 2200,1170 L 2250,1170" fill="none" stroke="#007F87" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2250,1170 2239.8683290659683,1174.2836017653951 2239.8683290659683,1165.7163982346049" fill="#007F87"/>
+<text x="2265" y="1176" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Primary logical flow</text>
+<path d="M 2200,1210 L 2250,1210" fill="none" stroke="#2563A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="9 7"/>
+<polygon points="2250,1210 2239.8683290659683,1214.2836017653951 2239.8683290659683,1205.7163982346049" fill="#2563A6"/>
+<text x="2265" y="1216" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Event / auxiliary call</text>
+<path d="M 2200,1250 L 2250,1250" fill="none" stroke="#7254AE" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="2250,1250 2239.8683290659683,1254.2836017653951 2239.8683290659683,1245.7163982346049" fill="#7254AE"/>
+<text x="2265" y="1256" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Model-serving path</text>
+<text x="2200" y="1300" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Boxes group service roles.</text>
+<text x="2200" y="1324" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">Arrows are logical interactions,</text>
+<text x="2200" y="1348" fill="#526879" font-family="Arial, sans-serif" font-size="17" font-weight="400">not packet-level network paths.</text>
+<text x="40" y="1427" fill="#2563A6" font-family="Arial, sans-serif" font-size="25" font-weight="700">3  SOLR INFRASTRUCTURE  [C]  |  AUTHORED + OWNED END TO END</text>
+<rect x="40" y="1450" width="795" height="194" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="40" y="1450" width="6" height="194" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="60" y="1483" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Provision infrastructure</text>
+<text x="60" y="1514" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Terraform foundations + Ansible / CloudFormation</text>
+<text x="60" y="1542" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">EC2 instances, EBS storage, ENIs and security groups</text>
+<text x="60" y="1570" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">IAM / KMS integration and host bootstrapping</text>
+<text x="60" y="1598" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Environment-specific deployment and AMI refresh tooling</text>
+<rect x="865" y="1450" width="795" height="194" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="865" y="1450" width="6" height="194" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="885" y="1483" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Configure SolrCloud + ZooKeeper</text>
+<text x="885" y="1514" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Ansible roles for Solr 8 / 9 and ZooKeeper</text>
+<text x="885" y="1542" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">JDK / ARM support, JVM settings and TLS / ACL setup</text>
+<text x="885" y="1570" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Solr + node exporters; logs and metrics configuration</text>
+<text x="885" y="1598" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Backup integration and persistent-storage configuration</text>
+<rect x="1690" y="1450" width="830" height="194" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1690" y="1450" width="6" height="194" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="1710" y="1483" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Operate, validate &amp; migrate</text>
+<text x="1710" y="1514" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">AZ-aware replica placement and add / remove utilities</text>
+<text x="1710" y="1542" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Serial rolling restarts with recovery-status checks</text>
+<text x="1710" y="1570" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Collection health and document-count comparisons</text>
+<text x="1710" y="1598" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Replica-transition tooling for cluster / node migrations</text>
+<text x="40" y="1671" fill="#2563A6" font-family="Arial, sans-serif" font-size="19" font-weight="400">Personal ownership: Solr IaC and lifecycle tooling. Built on shared cloud modules and open-source components.</text>
+<text x="40" y="1710" fill="#007F87" font-family="Arial, sans-serif" font-size="25" font-weight="700">4  PLATFORM TOOLING + PRODUCTION OWNERSHIP</text>
+<rect x="40" y="1740" width="795" height="189" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="40" y="1740" width="6" height="189" rx="2" fill="#007F87" stroke="#007F87" stroke-width="2"/>
+<text x="60" y="1773" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Application delivery  [A]</text>
+<text x="60" y="1804" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Git + environment overlays -&gt; Flux / Kustomize</text>
+<text x="60" y="1832" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Image policies / update automation / deployment alerts</text>
+<text x="60" y="1860" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Kubernetes configuration, service routing and release diagnosis</text>
+<text x="60" y="1888" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">IaC foundation: Terraform / CloudFormation / Ansible</text>
+<rect x="865" y="1740" width="795" height="189" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="865" y="1740" width="6" height="189" rx="2" fill="#7254AE" stroke="#7254AE" stroke-width="2"/>
+<text x="885" y="1773" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">Model onboarding &amp; delivery  [B]</text>
+<text x="885" y="1804" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Model values + reusable Helm charts -&gt; Argo CD</text>
+<text x="885" y="1832" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Custom image builds -&gt; artifact loader -&gt; checksum verification</text>
+<text x="885" y="1860" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">GPU sizing, runtime parameters and model API registration</text>
+<text x="885" y="1888" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Shared-weight lifecycle, probes and Prometheus ServiceMonitor</text>
+<rect x="1690" y="1740" width="830" height="189" rx="12" fill="#FFFFFF" stroke="#D8E2E9" stroke-width="2"/>
+<rect x="1690" y="1740" width="6" height="189" rx="2" fill="#2563A6" stroke="#2563A6" stroke-width="2"/>
+<text x="1710" y="1773" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">SRE + distributed systems engineering</text>
+<text x="1710" y="1804" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Prometheus / Grafana metrics + Splunk logs -&gt; alerts</text>
+<text x="1710" y="1832" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Capacity, JVM/GC, query/index and storage performance</text>
+<text x="1710" y="1860" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Incident diagnosis, backups, recovery and migration tooling</text>
+<text x="1710" y="1888" fill="#526879" font-family="Arial, sans-serif" font-size="21" font-weight="400">Identity, secret integration and workload policy controls</text>
+<text x="40" y="1986" fill="#007F87" font-family="Arial, sans-serif" font-size="19" font-weight="700">OWNERSHIP STORY</text>
+<text x="260" y="1986" fill="#183349" font-family="Arial, sans-serif" font-size="23" font-weight="700">AI platform SRE  |  Distributed systems SME  |  Mission-critical migrations  |  End-to-end deployment tooling</text>
+<text x="40" y="2030" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Logical composite of production deployment families; not a claim that every service ran in one physical cluster or one release.</text>
+<text x="40" y="2056" fill="#526879" font-family="Arial, sans-serif" font-size="18" font-weight="400">Application/model separation, Strimzi placement and internal-model hosting include user-confirmed context. Names, endpoints, tenant IDs and secrets are generalized.</text>
+</svg>

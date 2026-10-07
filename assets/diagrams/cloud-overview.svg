@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 780" role="img"><title>Hybrid cloud document and search platform</title><desc>Application access, cloud foundations and recovery shown as distinct responsibilities. Logical composite of releases. DR results: approximately 15-minute RPO and 2-hour RTO for the delivered environment.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#388884" stroke-width="1.5"/></marker></defs><rect width="1440" height="780" rx="20" fill="#f5f7f7"/><path d="M0 8H1440" stroke="#087c75" stroke-width="16"/>
+<text x="44" y="66" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#1b3442">Hybrid cloud document and search platform</text>
+<text x="44" y="104" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#4e6570">Application access, cloud foundations and recovery shown as distinct responsibilities</text>
+<text x="44" y="151" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">APPLICATION DATA PATH</text>
+<rect x="44" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Legacy application</text>
+<text x="62" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Enterprise data center</text>
+<path d="M359 226H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Hybrid connectivity</text>
+<text x="407" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Private access + load balancer</text>
+<path d="M704 226H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Private proxy tier</text>
+<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Multi-AZ / autoscaling</text>
+<path d="M1049 226H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">S3 + search</text>
+<text x="1097" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Object storage / Elasticsearch</text>
+<text x="44" y="341" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">IDENTITY AND INFRASTRUCTURE</text>
+<rect x="44" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Enterprise identity</text>
+<text x="62" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Directory / federation</text>
+<rect x="389" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">AWS authorization</text>
+<text x="407" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">SAML → STS temporary credentials</text>
+<rect x="734" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Reusable provisioning</text>
+<text x="752" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Roles / network / KMS / storage</text>
+<rect x="1079" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Configuration</text>
+<text x="1097" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Environment parameters</text>
+<text x="44" y="531" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">RECOVERY RESPONSIBILITIES</text>
+<rect x="44" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Primary data + search</text>
+<text x="62" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Production state</text>
+<path d="M359 606H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Replication + snapshots</text>
+<text x="407" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Data copies / backup artifacts</text>
+<path d="M704 606H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Secondary region</text>
+<text x="752" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Restore storage / recovery tier</text>
+<path d="M1049 606H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Recovery automation</text>
+<text x="1097" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Provision + restore workflows</text>
+<text x="44" y="741" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#4e6570">Logical composite of releases. DR results: approximately 15-minute RPO and 2-hour RTO for the delivered environment.</text>
+</svg>

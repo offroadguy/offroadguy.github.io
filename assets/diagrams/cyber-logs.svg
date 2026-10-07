@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 590" role="img"><title>Log collection test environments</title><desc>Same ingestion shape; distinct functional and performance configurations. Configuration differences are design context, not a claimed throughput improvement.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#388884" stroke-width="1.5"/></marker></defs><rect width="1440" height="590" rx="20" fill="#f5f7f7"/><path d="M0 8H1440" stroke="#087c75" stroke-width="16"/>
+<text x="44" y="66" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#1b3442">Log collection test environments</text>
+<text x="44" y="104" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#4e6570">Same ingestion shape; distinct functional and performance configurations</text>
+<text x="44" y="151" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">PERFORMANCE ENVIRONMENT</text>
+<rect x="44" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Producer processes</text>
+<text x="62" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Generate / collect events</text>
+<path d="M359 226H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Aggregator</text>
+<text x="407" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">CPU + memory + local SSD</text>
+<path d="M704 226H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Kafka brokers</text>
+<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Partitioned topics / replication</text>
+<path d="M1049 226H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">HDFS</text>
+<text x="1097" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Downstream storage</text>
+<text x="44" y="341" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">FUNCTIONAL ENVIRONMENT</text>
+<rect x="44" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Producer processes</text>
+<text x="62" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Exercise collection behavior</text>
+<path d="M359 416H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Aggregator + manager</text>
+<text x="407" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Control / functional checks</text>
+<path d="M704 416H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Broker nodes</text>
+<text x="752" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Alternate disk configuration</text>
+<path d="M1049 416H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">HDFS</text>
+<text x="1097" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Validate ingestion behavior</text>
+<text x="44" y="551" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#4e6570">Configuration differences are design context, not a claimed throughput improvement.</text>
+</svg>

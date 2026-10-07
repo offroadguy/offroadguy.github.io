@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 590" role="img"><title>Packet-capture performance environment</title><desc>Capture and replay roles redrawn without device or address identifiers. 40 Gb/s describes the capture technology. Sustained end-to-end throughput is not established.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#388884" stroke-width="1.5"/></marker></defs><rect width="1440" height="590" rx="20" fill="#f5f7f7"/><path d="M0 8H1440" stroke="#087c75" stroke-width="16"/>
+<text x="44" y="66" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#1b3442">Packet-capture performance environment</text>
+<text x="44" y="104" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#4e6570">Capture and replay roles redrawn without device or address identifiers</text>
+<text x="44" y="151" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">CAPTURE TEST PATH</text>
+<rect x="44" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Traffic replay sources</text>
+<text x="62" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Controlled replay input</text>
+<path d="M359 226H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Switch / packet fabric</text>
+<text x="407" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">10G / 40G test links</text>
+<path d="M704 226H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Capture hosts</text>
+<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">NIC + software / FPGA paths</text>
+<path d="M1049 226H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Persistent storage</text>
+<text x="1097" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">SSD / disk / HDFS paths</text>
+<text x="44" y="341" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">INTEGRATION AND OPERATIONS</text>
+<rect x="44" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Security sensors</text>
+<text x="62" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Corelight / IDS integrations</text>
+<rect x="389" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Host tuning</text>
+<text x="407" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">CPU / NIC / storage behavior</text>
+<rect x="734" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Data-transfer network</text>
+<text x="752" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Capture / replay movement</text>
+<rect x="1079" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Management network</text>
+<text x="1097" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Separate host access</text>
+<text x="44" y="551" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#4e6570">40 Gb/s describes the capture technology. Sustained end-to-end throughput is not established.</text>
+</svg>

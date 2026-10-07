@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 780" role="img"><title>Cyber telemetry and distributed ingestion</title><desc>Logical platform roles across capture, collection, storage and investigation. Rows group platform capabilities; they do not assert one pipeline for every data source.</desc><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="none" stroke="#388884" stroke-width="1.5"/></marker></defs><rect width="1440" height="780" rx="20" fill="#f5f7f7"/><path d="M0 8H1440" stroke="#087c75" stroke-width="16"/>
+<text x="44" y="66" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#1b3442">Cyber telemetry and distributed ingestion</text>
+<text x="44" y="104" font-family="Arial,sans-serif" font-size="20" font-weight="400" fill="#4e6570">Logical platform roles across capture, collection, storage and investigation</text>
+<text x="44" y="151" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">PACKET PATH</text>
+<rect x="44" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Mirrored network traffic</text>
+<text x="62" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Out-of-band source traffic</text>
+<path d="M359 226H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Packet broker</text>
+<text x="407" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Capture distribution</text>
+<path d="M704 226H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Capture systems</text>
+<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">40 Gb/s technology test bed</text>
+<path d="M1049 226H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="173" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Packet storage</text>
+<text x="1097" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Capture storage / HDFS</text>
+<text x="44" y="341" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">EVENT PATH</text>
+<rect x="44" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Logs + flow telemetry</text>
+<text x="62" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">App / firewall / NetFlow</text>
+<path d="M359 416H382" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Collectors + aggregator</text>
+<text x="407" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Telemetry collection</text>
+<path d="M704 416H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="734" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Kafka</text>
+<text x="752" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Brokered ingestion</text>
+<path d="M1049 416H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1079" y="363" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="363" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="398" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">HDFS + analytics</text>
+<text x="1097" y="431" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Distributed persistence</text>
+<text x="44" y="531" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#087c75">CROSS-CUTTING CAPABILITIES</text>
+<rect x="44" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="44" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="62" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Distributed processing</text>
+<text x="62" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Spark / Hadoop</text>
+<rect x="389" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="389" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="407" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Search + investigation</text>
+<text x="407" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Solr / HBase / Elasticsearch</text>
+<rect x="734" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="752" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Collector visibility</text>
+<text x="752" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Prometheus monitoring</text>
+<rect x="1079" y="553" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="553" width="5" height="106" rx="2" fill="#087c75"/>
+<text x="1097" y="588" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Repeatable deployment</text>
+<text x="1097" y="621" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">Ansible / cloud + host tools</text>
+<text x="44" y="741" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#4e6570">Rows group platform capabilities; they do not assert one pipeline for every data source.</text>
+</svg>

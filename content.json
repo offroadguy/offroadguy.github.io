@@ -467,5 +467,61 @@
         }
       ]
     }
+  ],
+  "capabilities": [
+    {
+      "title": "LLM model serving",
+      "description": "Build and operate the deployment tooling behind GPU-backed model serving.",
+      "detail": "vLLM · Helm · Argo CD · EKS",
+      "case": "genai"
+    },
+    {
+      "title": "Distributed systems SME",
+      "description": "Design and operate distributed storage and ingestion platforms, from capacity planning to recovery.",
+      "detail": "Petabyte-scale data systems",
+      "case": "cyber-data"
+    },
+    {
+      "title": "Vector database ownership",
+      "description": "Own retrieval infrastructure through provisioning, scaling, tuning and production support.",
+      "detail": "Solr · Milvus · OpenSearch",
+      "case": "genai"
+    },
+    {
+      "title": "Mission-critical migrations",
+      "description": "Lead platform migrations across architecture, data movement, validation and production transition.",
+      "detail": "Hadoop · Solr · HBase · AWS",
+      "case": "migration"
+    },
+    {
+      "title": "Observability: logs to alerts",
+      "description": "Connect logs and metrics to dashboards, actionable alerts and production diagnosis.",
+      "detail": "Logging · Metrics · Dashboards · Alerting",
+      "case": "genai"
+    },
+    {
+      "title": "End-to-end IaC tooling",
+      "description": "Build repeatable provisioning, configuration and lifecycle automation that teams can operate.",
+      "detail": "Terraform · CloudFormation · Ansible · Python",
+      "case": "cloud-foundations"
+    },
+    {
+      "title": "Disaster recovery",
+      "description": "Design recovery infrastructure and automation around the application’s continuity requirements.",
+      "detail": "Delivered DR: ~15-minute RPO / ~2-hour RTO",
+      "case": "cloud-foundations"
+    },
+    {
+      "title": "Performance tuning",
+      "description": "Trace bottlenecks across the runtime, query path, cache, operating system and storage.",
+      "detail": "JVM / GC · Query / index · Cache · OS",
+      "case": "genai"
+    },
+    {
+      "title": "Cybersecurity telemetry",
+      "description": "Integrate multiple security data sources into a correlated telemetry and analytics platform.",
+      "detail": "PCAP · NetFlow · App logs · Firewall events",
+      "case": "cyber-data"
+    }
   ]
 }

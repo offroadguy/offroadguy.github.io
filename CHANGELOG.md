@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.0 — 2026-10-07
+
+- Added nine homepage capability cards based on the resume Engineering Highlights, linked to relevant case studies.
+- Added a low-resolution/anti-scraping note and invitation to a high-resolution walkthrough above every original-diagram gallery.
+
 ## 1.3.0 — 2026-10-07
 
 - Replaced original-file downloads and higher-resolution previews with compressed 640-pixel previews.

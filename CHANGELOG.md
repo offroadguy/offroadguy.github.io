@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 — 2026-10-07
+
+- Added the supplied headshot beside the homepage introduction with responsive portrait framing.
+- Preserved the photo pixels; excluded location metadata from the public copy.
+
 ## 1.1.0 — 2026-10-07
 
 - Added all eleven original supplied diagrams to the matching case studies, with previews, full-size links and downloads.

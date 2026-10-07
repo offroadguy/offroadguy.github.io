@@ -2,3 +2,7 @@
 .build/
 __pycache__/
 node_modules/
+
+# Original diagrams must stay outside public history
+/assets/originals/
+/assets/original-previews/

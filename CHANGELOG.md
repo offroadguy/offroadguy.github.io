@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 — 2026-10-07
+
+- Replaced original-file downloads and higher-resolution previews with compressed 640-pixel previews.
+- Removed full-resolution original files from the current site; simplified architecture walkthroughs remain readable.
+
 ## 1.2.0 — 2026-10-07
 
 - Added the supplied headshot beside the homepage introduction with responsive portrait framing.

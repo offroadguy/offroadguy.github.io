@@ -96,14 +96,9 @@
       ],
       "originals": [
         {
-          "file": "genai-platform.pdf",
-          "original_name": "Apple_Enterprise_GenAI_Platform_Architecture.pdf",
           "title": "Enterprise GenAI platform",
           "description": "The supplied portfolio architecture PDF, including Solr ownership. This is the recent reconstructed overview, not a historical production drawing.",
-          "preview": "genai-platform.png",
-          "format": "PDF",
-          "bytes": 75311,
-          "sha256": "308af1de30bc57896ed3d5dab22bafaf43abe89134e188e4f2c894ca6537e7cc"
+          "preview": "genai-platform.jpg"
         }
       ]
     },
@@ -178,7 +173,7 @@
         "Integrated multiple telemetry families and automated deployment and operational monitoring for the product's distributed stack."
       ],
       "operations": "This work required following a performance symptom across system boundaries: capture hardware, network links, storage media, the aggregation process, Kafka and HDFS. The architecture set is useful for discussing how I isolate bottlenecks and make a complex platform repeatable to deploy and support.",
-      "scope": "The walkthrough diagrams are simplified redraws; original supplied files are available separately. Gateway capacities and test configurations are not promoted to production benchmarks. The separate Amorphic cloud reference is dated June 2019 and credits a team author; it is included only as product context, not as evidence that I personally designed that entire later architecture. Telemetry here does not mean OpenTelemetry.",
+      "scope": "The walkthrough diagrams are simplified redraws; low-resolution previews of the supplied originals are available separately. Gateway capacities and test configurations are not promoted to production benchmarks. The separate Amorphic cloud reference is dated June 2019 and credits a team author; it is included only as product context, not as evidence that I personally designed that entire later architecture. Telemetry here does not mean OpenTelemetry.",
       "tags": [
         "Kafka",
         "HDFS",
@@ -223,54 +218,29 @@
       ],
       "originals": [
         {
-          "file": "cyber-multi-rack.pdf",
-          "original_name": "CyberDataLake_CDL Network Topology  - Multi Rack - Version.pdf",
           "title": "Multi-rack network topology",
           "description": "Capture, replay, security-tool integration and separate data/management networks.",
-          "preview": "cyber-multi-rack.png",
-          "format": "PDF",
-          "bytes": 101078,
-          "sha256": "fea7ed25bdadede8157f0ba753791b083c900710e5e30ec9c7528a05ff8f89d1"
+          "preview": "cyber-multi-rack.jpg"
         },
         {
-          "file": "cyber-gateway.pdf",
-          "original_name": "CyberDataLake_Gateway - Architecture.pdf",
           "title": "Gateway deployment architecture",
           "description": "Original lightweight and larger gateway footprints, including component roles and design targets.",
-          "preview": "cyber-gateway.png",
-          "format": "PDF",
-          "bytes": 57167,
-          "sha256": "d4ccb94d7d6be8f1fdde938b7afdc5ed1bc3e37e2c1790cf018f07fcdedf42c2"
+          "preview": "cyber-gateway.jpg"
         },
         {
-          "file": "cyber-log-testbed.png",
-          "original_name": "CyberDataLake_log-collect testbed.png",
           "title": "Log collection test bed",
           "description": "Functional and performance environments, with collector, aggregator, Kafka and HDFS configurations.",
-          "preview": "cyber-log-testbed.png",
-          "format": "PNG",
-          "bytes": 42107,
-          "sha256": "b0805ef9bb6e5c5bc99a1ccc0644c67e58ad3ac436f1dd5f1c9efc008234959a"
+          "preview": "cyber-log-testbed.jpg"
         },
         {
-          "file": "cyber-capture-testbed.pdf",
-          "original_name": "CyberDatalake_Capture 40G Test Env.pdf",
           "title": "40G capture test environment",
           "description": "Capture/replay connections and hardware configurations. Link speeds and design labels are not end-to-end throughput measurements.",
-          "preview": "cyber-capture-testbed.png",
-          "format": "PDF",
-          "bytes": 74028,
-          "sha256": "43f5a7c8919bbb9d33361fbb82af5fd3dc063ad77e38f40365b5fc5871cd984f"
+          "preview": "cyber-capture-testbed.jpg"
         },
         {
-          "file": "amorphic-team-reference.pdf",
-          "original_name": "CyberDataLake_Amorphic Diagrams - Initial Diagram.pdf",
           "title": "Amorphic cloud architecture reference",
-          "description": "Team-context drawing dated June 2019, with its original author credit preserved. It is not evidence of my sole authorship or an extension of my stated CDL role.",
-          "preview": "amorphic-team-reference.png",
-          "format": "PDF",
-          "bytes": 311280,
-          "sha256": "367f5efa1f302fe7bde33e4ad79b4ee5737b759e50a1aabce5c162baf2fa3301"
+          "description": "Team-context drawing dated June 2019, with its original author credit shown. It is not evidence of my sole authorship or an extension of my stated CDL role.",
+          "preview": "amorphic-team-reference.jpg"
         }
       ]
     },
@@ -364,14 +334,9 @@
       ],
       "originals": [
         {
-          "file": "hdfs-to-s3-migration.pdf",
-          "original_name": "Freddie Cloud Native Migration - HDFS to S3.pdf",
           "title": "HDFS/HAR to S3 migration approaches",
           "description": "The original comparison of staged, Spark and DistCp/MapReduce migration approaches.",
-          "preview": "hdfs-to-s3-migration.png",
-          "format": "PDF",
-          "bytes": 31095,
-          "sha256": "07cfb0880b69526d0fa4db723525c90d44d0969a24247b56ae2ac9faf079d155"
+          "preview": "hdfs-to-s3-migration.jpg"
         }
       ]
     },
@@ -481,44 +446,24 @@
       ],
       "originals": [
         {
-          "file": "cloud-proxy-farm.pdf",
-          "original_name": "Freddiemac_AWS - Proxy Farm -Network Diagram.pdf",
           "title": "AWS proxy farm",
           "description": "Private application access through hybrid connectivity, load balancing and autoscaled proxy instances.",
-          "preview": "cloud-proxy-farm.png",
-          "format": "PDF",
-          "bytes": 34037,
-          "sha256": "b0b6d5dd68cc1c70bc96c8cf9aac9e62ef04405e3019f7d56b3721a8794eba02"
+          "preview": "cloud-proxy-farm.jpg"
         },
         {
-          "file": "cloud-release-2.pdf",
-          "original_name": "Freddiemac_DOCSS - Release 2 - with Kibana Authenctication - AWS network diagram.pdf",
           "title": "Release 2 network, authentication and recovery",
           "description": "Federation, cloud data access and cross-region recovery shown in the supplied release drawing.",
-          "preview": "cloud-release-2.png",
-          "format": "PDF",
-          "bytes": 120911,
-          "sha256": "018199edddd5f61ae5cde5e458f1674acd42ba194fa5e0ed7c1ebcc6e918069e"
+          "preview": "cloud-release-2.jpg"
         },
         {
-          "file": "cloud-legacy-auth.pdf",
-          "original_name": "Freddiemac_Docss Current Auth.pdf",
           "title": "Legacy authentication architecture",
           "description": "The earlier directory, Kerberos and DNS dependencies, kept separate from the later federation design.",
-          "preview": "cloud-legacy-auth.png",
-          "format": "PDF",
-          "bytes": 71469,
-          "sha256": "d70e72cbde5b9d458f8038d37dcf1a51ffe49ee8f5140f3e115517443a116883"
+          "preview": "cloud-legacy-auth.jpg"
         },
         {
-          "file": "cloud-landing-zone-iac.pdf",
-          "original_name": "Freddiemac_IAC  Automation - Landing Zone - DocssBoundary.pdf",
           "title": "Landing-zone infrastructure automation",
           "description": "Infrastructure dependencies for roles, security groups, storage, encryption and configuration.",
-          "preview": "cloud-landing-zone-iac.png",
-          "format": "PDF",
-          "bytes": 32519,
-          "sha256": "298d0ba538011f38ee362f82311a312cdf2276069ffd54e7227d0390c05caf67"
+          "preview": "cloud-landing-zone-iac.jpg"
         }
       ]
     }

@@ -2,7 +2,7 @@
 
 Public portfolio: https://offroadguy.github.io/
 
-Four case studies covering enterprise GenAI, cyber telemetry, mission-critical data migration, and cloud infrastructure/identity/recovery. Includes twelve sanitized architecture views, a nine-page case-study PDF, and PDF/Word resumes.
+Four case studies covering enterprise GenAI, cyber telemetry, mission-critical data migration, and cloud infrastructure/identity/recovery. Includes twelve sanitized architecture views, a nine-page case-study PDF, and PDF resume.
 
 ## Update the site
 
@@ -31,3 +31,5 @@ Validation: desktop 1440px and mobile 390px on all five pages, local links/image
 Graphite design system with high-contrast sans-serif typography, electric-blue actions, blue/violet ownership states, compact technology chips and responsive case-study metrics. Selected work now leads directly after the hero and outcomes. Case diagrams remain on light reading surfaces. Reduced-motion and keyboard focus are supported. Resume and case-study downloads retain their existing print design.
 
 Homepage ordering in v2.1.0 prioritizes the current AI platform before capabilities, tools and architecture stories. Ingestion/documents and retrieval/agents onboarding are co-owned; operational ecosystem is owned. Hero includes a direct architecture shortcut.
+
+The public portfolio offers only the PDF resume. Editable Word releases remain in the private resume workspace.

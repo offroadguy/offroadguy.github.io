@@ -1,3 +1,7 @@
+# v2.1.1 — 2026-10-08
+
+- Removed the Word resume link and public DOCX download. PDF resume remains available; private editable versions remain unchanged.
+
 # v2.1.0 — 2026-10-08
 
 - Reordered homepage: AI platform, capabilities, technology logos, selected architecture stories, next inference focus.

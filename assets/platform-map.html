@@ -3,19 +3,19 @@
 <div class="platform-controls" role="group" aria-label="Platform map view"><button type="button" data-platform-view="all" aria-pressed="true">Full platform</button><button type="button" data-platform-view="ownership" aria-pressed="false">Highlight my ownership</button></div>
 <div class="platform-canvas" id="platform-map">
 <div class="platform-layer platform-context"><span class="platform-label">APPLICATIONS &amp; ACCESS / PLATFORM CONTEXT</span><h3>Enterprise chat · Document intelligence · Agent applications</h3><p>Studio interfaces, API gateways, identity and authorization</p></div>
-<div class="platform-service-grid">
-<div class="platform-layer platform-owned"><span class="platform-label">OWNED ONBOARDING / INGESTION &amp; DOCUMENTS</span><h3>Make enterprise data usable</h3><p>Connectors, parsing, PDF processing, chunking, extraction, translation and proprietary document conversion. Retry, throttled and recovery worker configurations.</p></div>
-<div class="platform-layer platform-owned"><span class="platform-label">OWNED ONBOARDING / RETRIEVAL &amp; AGENTS</span><h3>Connect context, tools and models</h3><p>Search, embeddings, knowledge graphs, memory, orchestration, agent runtimes, MCP/A2A, plugins, guardrails and evaluation.</p></div>
-<div class="platform-layer platform-shared"><span class="platform-label">OWNED / GPU SERVING &amp; ONBOARDING</span><h3>Bring models into production</h3><p>Dedicated GPU-backed EKS, vLLM, tensor parallelism, memory budgets, LoRA and custom images. Model weights staged from S3 to shared storage with integrity validation.</p></div>
-</div>
 <div class="platform-owned-grid">
+<div class="platform-layer platform-shared"><span class="platform-label">OWNED / GPU SERVING &amp; ONBOARDING</span><h3>Bring models into production</h3><p>Dedicated GPU-backed EKS, vLLM, tensor parallelism, memory budgets, LoRA and custom images. Model weights staged from S3 to shared storage with integrity validation.</p></div>
 <div class="platform-layer platform-owned"><span class="platform-label">OWNED / DATA INFRASTRUCTURE</span><h3>Databases, messaging and performance</h3><p>Operations across vector databases, Redis, MongoDB, Elasticsearch/OpenSearch and Kafka; infrastructure and lifecycle tooling, capacity, performance and cost optimization.</p><strong>Vector infrastructure: 250+ nodes / ~200 TB · ~7s to ~1.9s retrieval</strong></div>
 <div class="platform-layer platform-owned"><span class="platform-label">OWNED / PLATFORM OPERATIONS</span><h3>Kubernetes, tooling and reliability</h3><p>Kubernetes, GitOps/IaC and operational tooling; metrics and logs through dashboards and alerts; capacity planning, cost optimization and disaster recovery.</p><strong>Python · Terraform · Ansible · Helm · GitOps</strong></div>
+<div class="platform-layer platform-owned"><span class="platform-label">OWNED / OPERATIONAL ECOSYSTEM</span><h3>Observability and operational automation</h3><p>Prometheus, Grafana and Splunk; SRE portals/APIs, ingestion dashboards, probes, smart alerting, scheduled reporting, backup CronJobs and credential checks.</p></div>
 </div>
-<div class="platform-layer platform-context"><span class="platform-label">OPERATIONAL ECOSYSTEM / PLATFORM CONTEXT</span><p>Prometheus, Grafana and Splunk; SRE portals/APIs, ingestion dashboards, probes, smart alerting, scheduled reporting, backup CronJobs and credential checks.</p></div>
+<div class="platform-owned-grid platform-coowned-grid">
+<div class="platform-layer platform-coowned"><span class="platform-label">CO-OWNED ONBOARDING / INGESTION &amp; DOCUMENTS</span><h3>Make enterprise data usable</h3><p>Connectors, parsing, PDF processing, chunking, extraction, translation and proprietary document conversion. Retry, throttled and recovery worker configurations.</p></div>
+<div class="platform-layer platform-coowned"><span class="platform-label">CO-OWNED ONBOARDING / RETRIEVAL &amp; AGENTS</span><h3>Connect context, tools and models</h3><p>Search, embeddings, knowledge graphs, memory, orchestration, agent runtimes, MCP/A2A, plugins, guardrails and evaluation.</p></div>
+</div>
 <div class="platform-clouds"><span>PLATFORM FOOTPRINT</span> AWS · GCP · Alibaba Cloud · Apple private cloud</div>
 </div>
-<p class="platform-view-note" aria-live="polite">Full platform view: gray shows the wider system, blue marks my ownership, and violet marks owned GPU serving infrastructure.</p>
-<p class="platform-scope">Conceptual capability map, not a single request path. Ownership labels describe onboarding, infrastructure and operations; application implementation remains a team contribution.</p>
+<p class="platform-view-note" aria-live="polite">Full platform view: gray shows context, blue marks owned operations, violet marks owned GPU serving, and amber marks co-owned onboarding.</p>
+<p class="platform-scope">Conceptual capability map, not a single request path. Ownership labels distinguish owned infrastructure and operations from co-owned ingestion, document, retrieval and agent onboarding; application implementation remains a team contribution.</p>
 <a class="text-link" href="cases/genai.html">Explore the AI platform case study ↗</a>
 </section>

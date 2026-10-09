@@ -1,3 +1,11 @@
+# v2.1.0 — 2026-10-08
+
+- Reordered homepage: AI platform, capabilities, technology logos, selected architecture stories, next inference focus.
+- Marked ingestion/documents and retrieval/agents onboarding co-owned and moved these cards to the final grid row, with amber scope styling.
+- Marked operational ecosystem owned; updated map legends and interactive highlighting.
+- Hero primary link now leads to the platform; added an explicit architecture-story shortcut.
+- Verified order, scope labels, anchor navigation, toggles and responsive layout at 1440px and 390px.
+
 # v2.0.0 — 2026-10-08
 
 - Redesigned the website in graphite, white and electric blue with sans-serif typography and consistent technical surfaces.

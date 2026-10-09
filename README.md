@@ -18,7 +18,7 @@ The site is static HTML/CSS/JavaScript and has no runtime dependencies, analytic
 
 Experience and outcomes are based on Venkata Ganji's resume and confirmations. Apple was a contract through Mphasis; Freddie Mac and other client work was through Cloudwick. The later Amorphic architecture is explicitly team context. The 40 Gb/s label denotes capture technology, not a measured end-to-end benchmark. The 30 PB headline denotes total capacity across the earlier Hadoop environments.
 
-Version 2.0.0 · October 2026
+Version 2.1.0 · October 2026
 
 ## Resume alignment v1.6.0
 
@@ -29,3 +29,5 @@ Validation: desktop 1440px and mobile 390px on all five pages, local links/image
 ## Design v2.0.0
 
 Graphite design system with high-contrast sans-serif typography, electric-blue actions, blue/violet ownership states, compact technology chips and responsive case-study metrics. Selected work now leads directly after the hero and outcomes. Case diagrams remain on light reading surfaces. Reduced-motion and keyboard focus are supported. Resume and case-study downloads retain their existing print design.
+
+Homepage ordering in v2.1.0 prioritizes the current AI platform before capabilities, tools and architecture stories. Ingestion/documents and retrieval/agents onboarding are co-owned; operational ecosystem is owned. Hero includes a direct architecture shortcut.

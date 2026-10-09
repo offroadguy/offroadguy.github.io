@@ -27,8 +27,8 @@ if (platformMap) {
     platformMap.classList.toggle('focus-ownership', focus);
     controls.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     document.querySelector('.platform-view-note').textContent = focus
-      ? 'My contribution: blue highlights owned infrastructure and operations; violet highlights owned GPU serving and model onboarding. The wider platform remains visible for context.'
-      : 'Full platform view: gray shows the wider system, blue marks my ownership, and violet marks owned GPU serving infrastructure.';
+      ? 'My contribution: blue highlights owned infrastructure and operations; violet highlights owned GPU serving; amber identifies co-owned onboarding. The wider platform remains visible for context.'
+      : 'Full platform view: gray shows context, blue marks owned operations, violet marks owned GPU serving, and amber marks co-owned onboarding.';
   }));
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => {

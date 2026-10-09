@@ -29,3 +29,9 @@
 
 ## v1.4.1 — Work authorization badge
 - Added a subtle green “✓ No sponsorship required” badge at the top right of the shared header, with responsive wrapping on smaller screens.
+
+## v1.5.0 — AI platform scope and contribution map
+- Added a responsive home-page platform map separating wider application/data scope from owned infrastructure and co-owned model serving.
+- Added accessible full-platform/ownership controls and a reduced-motion-aware reveal animation.
+- Updated the downloadable resume to the verified two-page v3.2.0 edition.
+- Checked desktop/mobile layout, control state, reduced-motion behavior, case-page JavaScript and PDF links/page count.

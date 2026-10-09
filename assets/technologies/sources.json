@@ -1,0 +1,112 @@
+{
+  "s3": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/11.0.0/icons/amazons3.svg",
+    "ok": true
+  },
+  "nvidia": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nvidia.svg",
+    "ok": true
+  },
+  "solr": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apachesolr.svg",
+    "ok": true
+  },
+  "dr": {
+    "source": "Original generic line symbol; not a product logo"
+  },
+  "hbase": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apachehbase.svg",
+    "ok": true
+  },
+  "lmcache": {
+    "url": "https://raw.githubusercontent.com/LMCache/LMCache/dev/docs/source/assets/lmcache-logo_crop.png",
+    "ok": true
+  },
+  "python": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/python.svg",
+    "ok": true
+  },
+  "hadoop": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/apachehadoop.svg",
+    "ok": true
+  },
+  "vllm": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/vllm.svg",
+    "ok": true
+  },
+  "ansible": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/ansible.svg",
+    "ok": true
+  },
+  "sglang": {
+    "url": "https://raw.githubusercontent.com/sgl-project/sglang/main/assets/logo_square.png",
+    "ok": true
+  },
+  "centos": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/centos.svg",
+    "ok": true
+  },
+  "rust": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/rust.svg",
+    "ok": true
+  },
+  "huggingface": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/huggingface.svg",
+    "ok": true
+  },
+  "mongodb": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mongodb.svg",
+    "ok": true
+  },
+  "gcp": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg",
+    "ok": true
+  },
+  "bash": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gnubash.svg",
+    "ok": true
+  },
+  "grafana": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/grafana.svg",
+    "ok": true
+  },
+  "aws": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "ok": true
+  },
+  "helm": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/helm.svg",
+    "ok": true
+  },
+  "databricks": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/databricks.svg",
+    "ok": true
+  },
+  "prometheus": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/prometheus.svg",
+    "ok": true
+  },
+  "argo": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/argo.svg",
+    "ok": true
+  },
+  "kubernetes": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/kubernetes.svg",
+    "ok": true
+  },
+  "azure": {
+    "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg",
+    "ok": true
+  },
+  "ha": {
+    "source": "Original generic line symbol; not a product logo"
+  },
+  "terraform": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/terraform.svg",
+    "ok": true
+  },
+  "supermicro": {
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/11.0.0/icons/supermicro.svg",
+    "ok": true
+  }
+}

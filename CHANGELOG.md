@@ -1,3 +1,10 @@
+# v1.6.0 — 2026-10-08
+
+- Aligned ownership, solutions architecture, hardware and technology labels with resume v3.8.0.
+- Added contextual logo strips, case ownership grids and prospective inference focus.
+- Updated combined savings headline and PDF/Word resume downloads; refreshed case-study pack.
+- Preserved low-resolution originals and their walkthrough notes.
+
 # Changelog
 
 ## 1.4.0 — 2026-10-07

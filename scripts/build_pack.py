@@ -22,7 +22,7 @@ def start(kicker,title):
 start('ENGINEERING PORTFOLIO / OCTOBER 2026','AI infrastructure and distributed systems')
 y=p(35,100,'Venkata Ganji',width=750,size=30,bold=True);y=p(35,y+8,d['intro'],width=730,size=17)
 for i,a in enumerate(d['cases']):
- yy=240+i*67;txt(35,yy,a['number'],14,True,teal);txt(75,yy,a['short'],17,True);p(75,yy+10,a['engagement'],width=720,size=10,color=muted);c.linkURL('https://offroadguy.github.io/cases/'+a['id']+'.html',(35,H-yy-35,810,H-yy+20),relative=0)
+ yy=260+i*60;txt(35,yy,a['number'],14,True,teal);txt(75,yy,a['short'],17,True);p(75,yy+10,a['engagement'],width=720,size=10,color=muted);c.linkURL('https://offroadguy.github.io/cases/'+a['id']+'.html',(35,H-yy-35,810,H-yy+20),relative=0)
 p(35,522,'Sanitized reconstructions and career-reported outcomes. Full case studies and supporting diagrams are available on the website.',width=760,size=9,color=muted);c.showPage()
 for a in d['cases']:
  start('CASE '+a['number']+' / '+a['category'],a['short'])

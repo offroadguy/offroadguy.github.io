@@ -1,7 +1,7 @@
 {
   "name": "Venkata Ganji",
   "headline": "AI infrastructure. Distributed systems. Production ownership.",
-  "intro": "I build and operate the systems behind enterprise AI and data platforms—from telemetry ingestion and cloud migrations to vector retrieval and GPU-backed model serving.",
+  "intro": "AI platform infrastructure and distributed systems engineer with 12 years in production. Across Apple, Freddie Mac and startup environments, I have shipped tooling, architected critical migrations and owned infrastructure from deployment through incident recovery.",
   "linkedin": "https://www.linkedin.com/in/venkata-sai-ganji-3a30a2a4/",
   "cases": [
     {
@@ -15,15 +15,15 @@
       "color": "teal",
       "diagram": "genai",
       "deck": "Connecting enterprise knowledge to model-backed applications—and owning the infrastructure that keeps retrieval and serving reliable.",
-      "summary": "I shipped and owned model onboarding and deployment tooling, productionized ingestion and inference services, and authored the Solr infrastructure-as-code and lifecycle tooling end to end. My responsibility crossed Kubernetes, GPU serving, search infrastructure and production operations.",
+      "summary": "I owned Kubernetes, vector databases, platform operations and GPU-serving infrastructure within an internally engineered enterprise AI platform. I shipped model-weight onboarding, deployment and Solr lifecycle tooling, connecting ingestion, retrieval and model serving with production reliability.",
       "metrics": [
         [
           "7.0s → 1.9s",
           "Approximate vector-query latency"
         ],
         [
-          "$266K+",
-          "Annualized Solr migration savings"
+          "$500K+",
+          "Combined Solr + Mac infrastructure savings"
         ],
         [
           "250+ nodes",
@@ -32,10 +32,10 @@
       ],
       "problem": "Enterprise teams needed a shared platform for document Q&A, enterprise chat, incident intelligence and coding-agent workflows. These experiences depended on more than a model endpoint: documents had to be ingested, transformed and indexed; retrieval had to remain responsive; and model deployments needed repeatable artifact and runtime configuration. Different workloads also placed different demands on CPU, storage and GPU capacity.",
       "ownership": [
-        "Shipped and owned Helm/Argo CD model onboarding on a dedicated GPU EKS cluster, integrated with an ingestion and inference platform on a separate EKS cluster.",
-        "Authored and owned Solr IaC and lifecycle tooling: infrastructure provisioning, SolrCloud/ZooKeeper configuration, exporters, replica operations, restart workflows and migration validation.",
-        "Productionized 10+ GenAI microservices across development, UAT and production, including deployment manifests, environment overlays, routing, logging, metrics and release diagnosis.",
-        "Served as an escalation SME for pod failures, memory pressure, storage problems and query latency; connected recurring failures to automation and operational improvements."
+        "Shipped and owned GPU model onboarding: Helm/Argo CD, custom vLLM images, weight staging and checksums, tensor parallelism, memory budgets and LoRA configuration.",
+        "Authored and owned end-to-end Solr IaC and lifecycle tooling; owned operations across vector databases, Redis, MongoDB, Elasticsearch and Kafka.",
+        "Productionized 10+ ingestion and inference microservices across Dev/UAT/Prod; owned Kubernetes operations, upgrades, routing, autoscaling and capacity planning.",
+        "Owned observability from metrics and logs to dashboards and alerts, operational automation and recovery workflows; helped turn recurring failures into lasting fixes."
       ],
       "flow": [
         [
@@ -73,7 +73,8 @@
         "Expanded and automated infrastructure from approximately 10 to 250+ nodes, supporting about 200 TB of vector indices across Solr, Milvus and OpenSearch.",
         "Reduced vector-query latency from approximately 7.0 seconds to 1.9 seconds through workload-specific tuning.",
         "Architected a 200-node Solr migration to Graviton/ARM64, preserving query throughput and approximately 3,200 vCPU / 12.8 TB RAM capacity while reducing cost 19.8% ($266K+ annualized).",
-        "Helped reduce production incidents from approximately 20 per day to 2 per week through shared reliability work, observability and recurring-failure remediation."
+        "Helped reduce production incidents from approximately 20 per day to 2 per week through shared reliability work, observability and recurring-failure remediation.",
+        "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates reported separately: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion, productionized with application developers. The combined figure is not stated as an annual total."
       ],
       "operations": "The operating model combined application GitOps with model deployment automation and dedicated search lifecycle tools. Solr utilities supported availability-zone-aware replica placement, old/new-node replica transitions, serial restarts with recovery checks, and document-count comparisons. These are concrete controls I can explain during a migration or reliability interview.",
       "scope": "Sanitized logical composite of production configuration families and my account of the platform. It is not a live cluster inventory. Results are reported career outcomes; no LLM throughput, TTFT or GPU-utilization improvement is claimed. Solr authorship does not imply sole authorship of the broader platform or upstream components.",
@@ -100,7 +101,22 @@
           "description": "The supplied portfolio architecture PDF, including Solr ownership. This is the recent reconstructed overview, not a historical production drawing.",
           "preview": "genai-platform.jpg"
         }
-      ]
+      ],
+      "tiles": [
+        [
+          "MODEL SERVING & TOOLING",
+          "Shipped vLLM deployment tooling and model-weight onboarding."
+        ],
+        [
+          "DATA & PERFORMANCE",
+          "Owned vector stores, database operations and retrieval performance."
+        ],
+        [
+          "PLATFORM RELIABILITY",
+          "Owned Kubernetes, IaC, observability, capacity and recovery."
+        ]
+      ],
+      "technology_key": "Apple"
     },
     {
       "id": "cyber-data",
@@ -113,7 +129,7 @@
       "color": "blue",
       "diagram": "cyber-overview",
       "deck": "Turning packets, flows and security events into a correlated data platform, with performance work from the network interface through distributed storage.",
-      "summary": "I helped build the cyber data platform, implemented multi-source telemetry collection, designed a three-rack capture/replay test bed, and owned deployment and performance work across the hardware and distributed-data stack.",
+      "summary": "I owned the three-rack cyber data lake infrastructure end to end: hardware and network integration, operational tooling and performance tuning. I connected PCAP, NetFlow, application logs and firewall events to a correlated distributed-data platform.",
       "metrics": [
         [
           "3 racks",
@@ -131,8 +147,8 @@
       "problem": "Security data arrived in different shapes and at different rates: raw packet capture, NetFlow, application logs and firewall events. The engineering challenge was to collect those signals, move them into distributed processing and storage, and make them useful together. A packet-capture path also has different bottlenecks from a log pipeline, so testing needed to span NICs, disks, network fabrics, brokers and analytics services.",
       "ownership": [
         "Implemented collection of PCAP, NetFlow, application logs and firewall events to support a correlated cyber data lake.",
-        "Designed a three-rack test bed with packet brokers and IDS/IPS integrations; deployed and performance-tuned 40 Gb/s packet-capture technology.",
-        "Engineered Corelight and IXIA integrations and operated Hadoop, Kafka, Spark, Solr, HBase and Elasticsearch components supporting the product.",
+        "Owned Supermicro servers, high-throughput NICs, IXIA and ToR / supervisor-switch integration in the three-rack capture/replay environment; tuned 40 Gb/s capture technology.",
+        "Owned operational and performance tooling across capture, hardware and distributed data; engineered Corelight/IXIA integrations and operated Hadoop, Kafka, Spark, Solr, HBase and Elasticsearch.",
         "Built Prometheus monitoring for collector agents and automated cloud/on-premises deployment using CloudFormation, Ansible, Jenkins, GitLab, Kickstart, Puppet and Python APIs."
       ],
       "flow": [
@@ -242,7 +258,22 @@
           "description": "Team-context drawing dated June 2019, with its original author credit shown. It is not evidence of my sole authorship or an extension of my stated CDL role.",
           "preview": "amorphic-team-reference.jpg"
         }
-      ]
+      ],
+      "tiles": [
+        [
+          "OWNED INFRA & HARDWARE",
+          "Supermicro servers, high-throughput NICs"
+        ],
+        [
+          "OWNED NETWORK & CAPTURE",
+          "IXIA, ToR / supervisor switches, packet capture"
+        ],
+        [
+          "OWNED TOOLING & PERFORMANCE",
+          "Solr analytics, monitoring & performance tooling"
+        ]
+      ],
+      "technology_key": "Cyber Data Lake / Amorphic"
     },
     {
       "id": "migration",
@@ -255,7 +286,7 @@
       "color": "orange",
       "diagram": "migration",
       "deck": "A migration that connected data movement, search modernization, application access and operational recovery.",
-      "summary": "I led mission-critical cloud migration work and designed the transition of a mortgage-document platform from Cloudera Hadoop and Solr to AWS object storage and distributed search. I led Spark migration development and coordinated infrastructure, data movement, testing and production transition.",
+      "summary": "I delivered solutions architecture, software engineering and production operations across a nearly four-year Freddie Mac engagement. I led three mission-critical migrations, designed the Hadoop/Solr-to-S3/search transition, and led Spark migration development through production cutover.",
       "metrics": [
         [
           "3 migrations",
@@ -275,7 +306,7 @@
         "Led three mission-critical migrations across distributed-data and live application systems during the engagement, coordinating architecture, automation, data movement, performance testing and production transition.",
         "Designed and productionized a document-platform migration from Cloudera Hadoop/Solr to AWS Elasticsearch/OpenSearch, ELK and S3.",
         "Led development of Spark migration jobs moving Solr data into Elasticsearch/ELK and HBase data into S3.",
-        "Built reusable infrastructure and operations automation and partnered with test teams to performance-test infrastructure at scale using Dynatrace."
+        "Built reusable IaC and operations automation; designed Databricks, AWS Glue, Talend and S3 ingestion frameworks and Python/Airflow workflows; supported performance testing and production transitions."
       ],
       "flow": [
         [
@@ -338,7 +369,22 @@
           "description": "The original comparison of staged, Spark and DistCp/MapReduce migration approaches.",
           "preview": "hdfs-to-s3-migration.jpg"
         }
-      ]
+      ],
+      "tiles": [
+        [
+          "ARCHITECTURE",
+          "Rearchitecture & cloud migration"
+        ],
+        [
+          "SOFTWARE ENGINEERING",
+          "Spark, Python & ingestion pipelines"
+        ],
+        [
+          "PRODUCTION OPERATIONS",
+          "IaC, performance & disaster recovery"
+        ]
+      ],
+      "technology_key": "Freddie Mac"
     },
     {
       "id": "cloud-foundations",
@@ -465,19 +511,20 @@
           "description": "Infrastructure dependencies for roles, security groups, storage, encryption and configuration.",
           "preview": "cloud-landing-zone-iac.jpg"
         }
-      ]
+      ],
+      "technology_key": "Freddie Mac"
     }
   ],
   "capabilities": [
     {
       "title": "LLM model serving",
-      "description": "Build and operate the deployment tooling behind GPU-backed model serving.",
+      "description": "Ship and own model-weight onboarding, deployment tooling and production GPU-serving infrastructure.",
       "detail": "vLLM · Helm · Argo CD · EKS",
       "case": "genai"
     },
     {
       "title": "Distributed systems SME",
-      "description": "Design and operate distributed storage and ingestion platforms, from capacity planning to recovery.",
+      "description": "Own distributed infrastructure across hardware, networking, ingestion, storage, capacity and recovery.",
       "detail": "Petabyte-scale data systems",
       "case": "cyber-data"
     },
@@ -488,8 +535,8 @@
       "case": "genai"
     },
     {
-      "title": "Mission-critical migrations",
-      "description": "Lead platform migrations across architecture, data movement, validation and production transition.",
+      "title": "Solutions architecture & migrations",
+      "description": "Rearchitect mission-critical platforms and lead software delivery, data movement, validation and production transition.",
       "detail": "Hadoop · Solr · HBase · AWS",
       "case": "migration"
     },
@@ -501,7 +548,7 @@
     },
     {
       "title": "End-to-end IaC tooling",
-      "description": "Build repeatable provisioning, configuration and lifecycle automation that teams can operate.",
+      "description": "Author and ship repeatable provisioning, configuration and lifecycle tools, from infrastructure builds to safe recovery.",
       "detail": "Terraform · CloudFormation · Ansible · Python",
       "case": "cloud-foundations"
     },
@@ -523,5 +570,216 @@
       "detail": "PCAP · NetFlow · App logs · Firewall events",
       "case": "cyber-data"
     }
+  ],
+  "technology_strips": {
+    "Apple": [
+      [
+        "nvidia",
+        "NVIDIA"
+      ],
+      [
+        "solr",
+        "Solr"
+      ],
+      [
+        "aws",
+        "AWS"
+      ],
+      [
+        "gcp",
+        "GCP"
+      ],
+      [
+        "mongodb",
+        "MongoDB"
+      ],
+      [
+        "kubernetes",
+        "K8s"
+      ],
+      [
+        "prometheus",
+        "Prometheus"
+      ],
+      [
+        "terraform",
+        "Terraform"
+      ],
+      [
+        "vllm",
+        "vLLM"
+      ],
+      [
+        "huggingface",
+        "Hugging Face"
+      ],
+      [
+        "helm",
+        "Helm"
+      ],
+      [
+        "argo",
+        "Argo CD"
+      ],
+      [
+        "grafana",
+        "Grafana"
+      ],
+      [
+        "dr",
+        "Disaster recovery"
+      ],
+      [
+        "ha",
+        "High availability"
+      ]
+    ],
+    "Freddie Mac": [
+      [
+        "aws",
+        "AWS"
+      ],
+      [
+        "",
+        "Disaster recovery"
+      ],
+      [
+        "s3",
+        "S3"
+      ],
+      [
+        "",
+        "PingFederate"
+      ],
+      [
+        "kubernetes",
+        "K8s"
+      ],
+      [
+        "solr",
+        "Solr"
+      ],
+      [
+        "hbase",
+        "HBase"
+      ],
+      [
+        "databricks",
+        "Databricks"
+      ]
+    ],
+    "Cyber Data Lake / Amorphic": [
+      [
+        "",
+        "PCAP"
+      ],
+      [
+        "",
+        "NetFlow"
+      ],
+      [
+        "",
+        "Telemetry"
+      ],
+      [
+        "rust",
+        "Rust"
+      ],
+      [
+        "bash",
+        "Bash"
+      ],
+      [
+        "python",
+        "Python"
+      ],
+      [
+        "supermicro",
+        "Supermicro"
+      ],
+      [
+        "",
+        "SolrCapture"
+      ],
+      [
+        "",
+        "IXIA"
+      ],
+      [
+        "centos",
+        "CentOS"
+      ],
+      [
+        "ansible",
+        "Ansible"
+      ]
+    ],
+    "Earlier": [
+      [
+        "aws",
+        "AWS"
+      ],
+      [
+        "azure",
+        "Azure"
+      ],
+      [
+        "hadoop",
+        "Hadoop"
+      ],
+      [
+        "databricks",
+        "Databricks"
+      ],
+      [
+        "python",
+        "Python"
+      ],
+      [
+        "bash",
+        "Bash"
+      ],
+      [
+        "ansible",
+        "Ansible"
+      ]
+    ],
+    "Next focus": [
+      [
+        "nvidia",
+        "GenAI-Perf"
+      ],
+      [
+        "sglang",
+        "SGLang"
+      ],
+      [
+        "lmcache",
+        "LMCache"
+      ]
+    ]
+  },
+  "inference_focus": "Ready to build on production vLLM experience and take on deeper inference engineering deliverables using GenAI-Perf, SGLang and LMCache.",
+  "technology_context": [
+    [
+      "Apple",
+      "AI platform infrastructure & model serving",
+      "Kubernetes, vector databases, model-weight onboarding, IaC and production reliability."
+    ],
+    [
+      "Freddie Mac",
+      "Solutions architecture & engineering",
+      "Mission-critical migrations, Spark/Python delivery, infrastructure automation and disaster recovery."
+    ],
+    [
+      "Cyber Data Lake / Amorphic",
+      "Hardware through distributed ingestion",
+      "Supermicro servers, high-throughput NICs, IXIA, network integration and performance tooling."
+    ],
+    [
+      "Earlier",
+      "Cloud & distributed data foundations",
+      "Cloud engineering, Hadoop/HBase operations, automation and high availability across earlier engagements."
+    ]
   ]
 }

@@ -18,4 +18,10 @@ The site is static HTML/CSS/JavaScript and has no runtime dependencies, analytic
 
 Experience and outcomes are based on Venkata Ganji's resume and confirmations. Apple was a contract through Mphasis; Freddie Mac and other client work was through Cloudwick. The later Amorphic architecture is explicitly team context. The 40 Gb/s label denotes capture technology, not a measured end-to-end benchmark. The 30 PB headline denotes total capacity across the earlier Hadoop environments.
 
-Version 1.3.0 · October 2026
+Version 1.6.0 · October 2026
+
+## Resume alignment v1.6.0
+
+Downloads match resume v3.8.0. Technology strips and role ownership grids mirror the latest resume. The $500K+ metric is combined Solr and Mac savings, not an annual total. Next Inference Focus is aspirational; it does not claim completed GenAI-Perf, SGLang or LMCache projects. Locally hosted logo sources are recorded in `assets/technologies/sources.json`; generic symbols represent DR and HA.
+
+Validation: desktop 1440px and mobile 390px on all five pages, local links/images, ownership toggle, diagram dialogs, reduced motion; refreshed nine-page PDF pack visually reviewed.

@@ -41,3 +41,7 @@
 - Removed the repeated data scope row and retained clear platform context.
 - Updated the resume download to two-page v3.3.0 with the enhanced Freddie Mac section.
 - Verified ownership controls, desktop/mobile layout and reduced motion.
+
+## v1.5.2 — Production delivery wording
+- Updated resume download to the verified two-page v3.4.0 with concise enterprise/startup positioning and shipped tooling achievements.
+- Aligned the GenAI case study's model onboarding ownership and delivery language.

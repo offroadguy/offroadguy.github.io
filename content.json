@@ -15,7 +15,7 @@
       "color": "teal",
       "diagram": "genai",
       "deck": "Connecting enterprise knowledge to model-backed applications—and owning the infrastructure that keeps retrieval and serving reliable.",
-      "summary": "I developed and co-owned model onboarding and deployment tooling, productionized ingestion and inference services, and authored the Solr infrastructure-as-code and lifecycle tooling end to end. My responsibility crossed Kubernetes, GPU serving, search infrastructure and production operations.",
+      "summary": "I shipped and owned model onboarding and deployment tooling, productionized ingestion and inference services, and authored the Solr infrastructure-as-code and lifecycle tooling end to end. My responsibility crossed Kubernetes, GPU serving, search infrastructure and production operations.",
       "metrics": [
         [
           "7.0s → 1.9s",
@@ -32,7 +32,7 @@
       ],
       "problem": "Enterprise teams needed a shared platform for document Q&A, enterprise chat, incident intelligence and coding-agent workflows. These experiences depended on more than a model endpoint: documents had to be ingested, transformed and indexed; retrieval had to remain responsive; and model deployments needed repeatable artifact and runtime configuration. Different workloads also placed different demands on CPU, storage and GPU capacity.",
       "ownership": [
-        "Developed and co-owned Helm/Argo CD model onboarding on a dedicated GPU EKS cluster, integrated with an ingestion and inference platform on a separate EKS cluster.",
+        "Shipped and owned Helm/Argo CD model onboarding on a dedicated GPU EKS cluster, integrated with an ingestion and inference platform on a separate EKS cluster.",
         "Authored and owned Solr IaC and lifecycle tooling: infrastructure provisioning, SolrCloud/ZooKeeper configuration, exporters, replica operations, restart workflows and migration validation.",
         "Productionized 10+ GenAI microservices across development, UAT and production, including deployment manifests, environment overlays, routing, logging, metrics and release diagnosis.",
         "Served as an escalation SME for pod failures, memory pressure, storage problems and query latency; connected recurring failures to automation and operational improvements."

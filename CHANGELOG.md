@@ -35,3 +35,9 @@
 - Added accessible full-platform/ownership controls and a reduced-motion-aware reveal animation.
 - Updated the downloadable resume to the verified two-page v3.2.0 edition.
 - Checked desktop/mobile layout, control state, reduced-motion behavior, case-page JavaScript and PDF links/page count.
+
+## v1.5.1 — Ownership clarification
+- Updated onboarding, data operations and GPU-serving labels to match the user's explicit ownership clarification.
+- Removed the repeated data scope row and retained clear platform context.
+- Updated the resume download to two-page v3.3.0 with the enhanced Freddie Mac section.
+- Verified ownership controls, desktop/mobile layout and reduced motion.

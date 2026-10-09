@@ -1,3 +1,10 @@
+# v2.0.0 — 2026-10-08
+
+- Redesigned the website in graphite, white and electric blue with sans-serif typography and consistent technical surfaces.
+- Moved selected work before platform detail; refreshed portrait, navigation, cards, tool chips and case-study layouts.
+- Blue/violet platform ownership highlights; mobile metric rows and compact portrait card.
+- Retained all case-study content, downloads, low-resolution originals and scope statements.
+
 # v1.6.0 — 2026-10-08
 
 - Aligned ownership, solutions architecture, hardware and technology labels with resume v3.8.0.

@@ -1,7 +1,7 @@
 {
   "name": "Venkata Ganji",
   "headline": "AI infrastructure. Platform engineering. Production ownership.",
-  "intro": "AI infrastructure and platform engineer with 12 years building and operating production distributed systems. At Apple, I co-owned an internal enterprise e2e private AI serving platform and owned model-weight tooling and Solr infrastructure. My work connects architecture, hands-on automation, performance engineering and incident response.",
+  "intro": "AI infrastructure and platform engineer with 12 years building and operating production distributed systems. I build cloud-native platforms from the initial architecture and infrastructure foundations through deployment, observability, high availability and disaster recovery. At Freddie Mac, I designed and productionized cloud infrastructure and recovery systems. At Apple, I co-owned AI platform engineering and owned model-weight tooling and Solr infrastructure.",
   "linkedin": "https://www.linkedin.com/in/venkata-sai-ganji-3a30a2a4/",
   "cases": [
     {
@@ -401,15 +401,15 @@
     {
       "id": "cloud-foundations",
       "number": "04",
-      "title": "Cloud foundations that applications can depend on",
-      "short": "Cloud automation, identity & recovery",
+      "title": "Cloud-native platforms, from foundations to recovery",
+      "short": "Cloud-native platforms & recovery",
       "category": "PLATFORM ENGINEERING",
       "engagement": "Cloudwick · Client: Freddie Mac · Jan 2019–Aug 2023",
       "role": "AWS Cloud Solutions Architect & Infrastructure Consultant",
       "color": "purple",
       "diagram": "cloud-overview",
-      "deck": "Making a hybrid application work across network, identity, storage and recovery boundaries—with repeatable infrastructure underneath.",
-      "summary": "I designed and productionized cloud infrastructure for a document and search platform, including proxy access, federated authentication, reusable IaC and hybrid-cloud disaster recovery. The work joined application requirements with security and operational constraints.",
+      "deck": "Building the cloud foundation and carrying it through automation, production operations, high availability and disaster recovery.",
+      "summary": "I designed and productionized cloud infrastructure for a document and search platform—from networking, identity and reusable IaC to workload integration, production operations and hybrid-cloud disaster recovery. I worked across architecture, software tooling and operations to make the platform deployable, observable and recoverable.",
       "metrics": [
         [
           "~15 min",
@@ -429,6 +429,7 @@
         "Designed proxy, load-balancing and autoscaling infrastructure supporting the document platform's move to AWS.",
         "Developed reusable Terraform, CloudFormation and Ansible provisioning/landing-zone workflows covering compute, search, networking, IAM, secrets, encryption and cross-region storage.",
         "Designed federated authentication using PingFederate, Vault, AWS IAM/STS, ADFS and SAML across four environments; partnered with InfoSec on on-premises-to-S3 connectivity.",
+        "Built platform deployment and operations tooling and worked across observability, high availability and recovery as part of end-to-end cloud platform delivery.",
         "Built and productionized a hybrid-cloud DR environment using cross-region replication, S3, Airflow, Python and Elasticsearch/ELK, delivered within six months."
       ],
       "flow": [
@@ -468,7 +469,7 @@
         "Designed federated authentication across four environments and reusable infrastructure automation for cloud platform services.",
         "Supported a mission-critical document/search platform through migration, operations and infrastructure performance testing."
       ],
-      "operations": "The useful interview story is the join between teams and systems: coordinating security requirements, application behavior, infrastructure dependencies and recovery procedures. I can walk from an application request through the proxy and identity paths, then explain how the same platform is provisioned and restored.",
+      "operations": "My responsibility continued beyond provisioning. I connected cloud architecture with reusable Terraform, CloudFormation and Ansible workflows, bootstrap and operations automation, operational visibility, and recovery procedures. I worked across security requirements, application behavior and infrastructure dependencies, following the application request through proxy and identity paths and explaining how the platform could be provisioned and restored.",
       "scope": "Drawings represent different releases and environments; the portfolio shows their relationship without implying that every identity mechanism runs in the same request path. Recovery metrics are career-reported results for the described DR environment, not a universal service guarantee.",
       "tags": [
         "AWS",
@@ -550,11 +551,11 @@
       "anchor": "kubernetes"
     },
     {
-      "title": "Production reliability & distributed systems",
-      "description": "Diagnose failures across network, applications, queues and storage; build provisioning, recovery and operational automation.",
-      "detail": "PCAP · p95/p99 · PVCs · IaC · HA/DR",
+      "title": "Cloud-native platforms, from scratch to HA/DR",
+      "description": "Design and build cloud foundations, automate infrastructure and delivery, and connect observability, production operations and recovery. Delivered at Freddie Mac and co-owned AI platform engineering at Apple.",
+      "detail": "Architecture · IaC · Delivery · Observability · HA/DR",
       "case": "cloud-foundations",
-      "anchor": "outcomes"
+      "anchor": "platform-lifecycle"
     }
   ],
   "technology_strips": {
@@ -799,6 +800,40 @@
         "s3",
         "S3 / FSx weight staging"
       ]
+    ],
+    "Cloud-native lifecycle": [
+      [
+        "aws",
+        "AWS"
+      ],
+      [
+        "terraform",
+        "Terraform"
+      ],
+      [
+        "ansible",
+        "Ansible"
+      ],
+      [
+        "kubernetes",
+        "Kubernetes"
+      ],
+      [
+        "prometheus",
+        "Prometheus"
+      ],
+      [
+        "grafana",
+        "Grafana"
+      ],
+      [
+        "ha",
+        "High availability"
+      ],
+      [
+        "dr",
+        "Disaster recovery"
+      ]
     ]
   },
   "inference_focus": "Ready to build on production vLLM experience and take on deeper inference engineering deliverables using GenAI-Perf, SGLang and LMCache.",
@@ -810,8 +845,8 @@
     ],
     [
       "Freddie Mac",
-      "Solutions architecture & engineering",
-      "Mission-critical migrations, Spark/Python delivery, infrastructure automation and disaster recovery."
+      "Cloud-native platform architecture & delivery",
+      "Cloud foundations, reusable IaC, deployment and operations tooling, observability and hybrid-cloud disaster recovery."
     ],
     [
       "Cyber Data Lake / Amorphic",
@@ -902,5 +937,44 @@
       "Next tools to explore: GenAI-Perf, SGLang and LMCache"
     ],
     "scope": "Apple experience covers serving-platform infrastructure and tooling. Deeper inference optimization and the next-focus tools are part of my ongoing learning."
+  },
+  "cloud_native_story": {
+    "title": "From a blank cloud environment to a platform ready for production.",
+    "intro": "I connect the full platform lifecycle: architecture, cloud foundations, infrastructure as code, workload deployment, observability, high availability and disaster recovery. My work at Freddie Mac and Apple combined design, hands-on engineering and ongoing production responsibility.",
+    "stages": [
+      [
+        "Design and provision",
+        "Build the foundation",
+        "Translate application needs into cloud architecture, networking, identity, compute and storage. Make infrastructure repeatable with Terraform, CloudFormation and Ansible."
+      ],
+      [
+        "Deploy and automate",
+        "Bring workloads to production",
+        "Connect infrastructure to application delivery, Kubernetes and GitOps onboarding. Write deployment, bootstrap and lifecycle tooling to make delivery repeatable."
+      ],
+      [
+        "Observe and operate",
+        "Make behavior visible",
+        "Build operational visibility through logs, metrics, dashboards and alerts. Investigate latency, network paths, queue backlogs and storage problems across the request and data flows."
+      ],
+      [
+        "Keep available and recover",
+        "Design beyond the happy path",
+        "Connect high availability with recoverable state, cross-region replication, backups and provisioning automation. Plan how the platform returns to service when a component or region fails."
+      ]
+    ],
+    "evidence": [
+      [
+        "FREDDIE MAC / DESIGNED & PRODUCTIONIZED",
+        "Cloud architecture through HA/DR",
+        "Designed cloud foundations spanning private connectivity, load balancing, autoscaling, federated identity, storage and reusable IaC. Built and productionized hybrid-cloud disaster recovery with approximately 15-minute RPO and 2-hour RTO for that environment. My work covered architecture, tooling, observability and production operations."
+      ],
+      [
+        "APPLE / CO-OWNED PLATFORM ENGINEERING",
+        "AI infrastructure through production operations",
+        "Co-owned the enterprise AI platform’s infrastructure lifecycle, from cloud foundations and application/GPU Kubernetes setup to upgrades, patching, GitOps onboarding, observability and incident response. Owned model-weight tooling, Solr infrastructure and performance engineering, and Mac document-conversion infrastructure."
+      ]
+    ],
+    "scope": "The recovery figures describe the Freddie Mac DR environment. Apple responsibilities distinguish individually owned systems from platform infrastructure co-owned with the team."
   }
 }

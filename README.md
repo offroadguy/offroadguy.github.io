@@ -41,3 +41,7 @@ Ownership-first overview with four responsibilities; case studies immediately fo
 ## Kubernetes and inference chapters (October 13, 2026)
 
 The homepage introduces Kubernetes/GPU operations and inference engineering after the ownership overview. Both link to dedicated chapters within the AI platform case. Repository-backed tools are grouped separately from individual ownership; Abi Aryan coursework and next-focus tools are marked as ongoing learning. New SVG illustrations are sanitized conceptual views. Existing PDF downloads are unchanged in this update.
+
+## Cloud-native lifecycle (October 13, 2026)
+
+The opening summary and new homepage cloud-native section make end-to-end platform delivery explicit: design/provision, deploy/automate, observe/operate and HA/DR. The cloud foundations case includes the full lifecycle chapter. Freddie Mac recovery metrics remain scoped to its delivered DR environment; Apple team ownership remains explicit. PDF downloads are unchanged in this website-only update.

@@ -143,3 +143,15 @@ footer p,footer small,.back-link,.tags span,.case-layout>aside a,
 .engineering-feature .diagram-open>span{color:#c1d1fa}
 .case-content .engineering-feature .feature-layout{grid-template-columns:1fr}
 .experience-split ul{padding-left:18px;color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:0}
+
+/* End-to-end delivery roadmap, from foundations through recovery. */
+.platform-lifecycle{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:30px 0}
+.platform-lifecycle article{min-width:0;padding:24px 20px;background:#111a29;border:1px solid #35486a;border-radius:8px;border-top:3px solid #81a9ff}
+.platform-lifecycle .eyebrow{font-size:11px;margin-bottom:16px;color:#b4c9ff;line-height:1.7}
+.platform-lifecycle h3{font-size:21px;color:#e0eaff;margin-bottom:14px}
+.platform-lifecycle p:last-child{font-size:14px;line-height:1.8;margin-bottom:0}
+.cloud-native-feature .experience-split article{background:#101c30}
+.case-content .platform-lifecycle{grid-template-columns:repeat(2,minmax(0,1fr))}
+.case-content .cloud-native-feature .experience-split{grid-template-columns:1fr}
+@media(max-width:1050px){.platform-lifecycle{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.platform-lifecycle,.case-content .platform-lifecycle{grid-template-columns:1fr}.platform-lifecycle article{padding:22px}.platform-lifecycle .eyebrow{font-size:12px}}

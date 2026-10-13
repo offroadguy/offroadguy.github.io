@@ -2,7 +2,7 @@
 
 Public portfolio: https://offroadguy.github.io/
 
-Four case studies covering enterprise GenAI, cyber telemetry, mission-critical data migration, and cloud infrastructure/identity/recovery. Includes twelve sanitized architecture views, a nine-page case-study PDF, and PDF resume.
+Four case studies covering enterprise GenAI, cyber telemetry, mission-critical data migration, and cloud infrastructure/identity/recovery. Includes twelve sanitized architecture views, a ten-page case-study PDF, and PDF resume.
 
 ## Update the site
 
@@ -18,11 +18,11 @@ The site is static HTML/CSS/JavaScript and has no runtime dependencies, analytic
 
 Experience and outcomes are based on Venkata Ganji's resume and confirmations. Apple was a contract through Mphasis; Freddie Mac and other client work was through Cloudwick. The later Amorphic architecture is explicitly team context. The 40 Gb/s label denotes capture technology, not a measured end-to-end benchmark. The 30 PB headline denotes total capacity across the earlier Hadoop environments.
 
-Version 2.1.0 · October 2026
+Version 2.2.0 · October 2026
 
 ## Resume alignment v1.6.0
 
-Downloads match resume v3.8.0. Technology strips and role ownership grids mirror the latest resume. The $500K+ metric is combined Solr and Mac savings, not an annual total. Next Inference Focus is aspirational; it does not claim completed GenAI-Perf, SGLang or LMCache projects. Locally hosted logo sources are recorded in `assets/technologies/sources.json`; generic symbols represent DR and HA.
+Downloads match resume v3.8.9. Technology strips and role ownership grids mirror the latest resume. The $500K+ metric is combined Solr and Mac savings, not an annual total. Next Inference Focus is aspirational; it does not claim completed GenAI-Perf, SGLang or LMCache projects. Locally hosted logo sources are recorded in `assets/technologies/sources.json`; generic symbols represent DR and HA.
 
 Validation: desktop 1440px and mobile 390px on all five pages, local links/images, ownership toggle, diagram dialogs, reduced motion; refreshed nine-page PDF pack visually reviewed.
 
@@ -33,3 +33,7 @@ Graphite design system with high-contrast sans-serif typography, electric-blue a
 Homepage ordering in v2.1.0 prioritizes the current AI platform before capabilities, tools and architecture stories. Ingestion/documents and retrieval/agents onboarding are co-owned; operational ecosystem is owned. Hero includes a direct architecture shortcut.
 
 The public portfolio offers only the PDF resume. Editable Word releases remain in the private resume workspace.
+
+## Portfolio refresh v2.2.0 — October 13, 2026
+
+Ownership-first overview with four responsibilities; case studies immediately follow the AI platform overview. Navigation now provides AI Platform, Case Studies, Resume and email Contact on desktop and mobile. Corrected current PDF resume, contact and earned CS master’s degree. Added personally developed Go checksum/Kafka resource tools, NVIDIA GPU names, approved model identifiers, Solr collection scale and production incident investigation. Configuration counts are labeled as configured values. Ten-page case-study download aligned with updated narrative. Button contrast and small supporting text improved.

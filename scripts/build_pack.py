@@ -22,7 +22,7 @@ def start(kicker,title):
 start('ENGINEERING PORTFOLIO / OCTOBER 2026','AI infrastructure and distributed systems')
 y=p(35,100,'Venkata Ganji',width=750,size=30,bold=True);y=p(35,y+8,d['intro'],width=730,size=17)
 for i,a in enumerate(d['cases']):
- yy=260+i*60;txt(35,yy,a['number'],14,True,teal);txt(75,yy,a['short'],17,True);p(75,yy+10,a['engagement'],width=720,size=10,color=muted);c.linkURL('https://offroadguy.github.io/cases/'+a['id']+'.html',(35,H-yy-35,810,H-yy+20),relative=0)
+ yy=285+i*55;txt(35,yy,a['number'],14,True,teal);txt(75,yy,a['short'],17,True);p(75,yy+10,a['engagement'],width=720,size=10,color=muted);c.linkURL('https://offroadguy.github.io/cases/'+a['id']+'.html',(35,H-yy-35,810,H-yy+20),relative=0)
 p(35,522,'Sanitized reconstructions and career-reported outcomes. Full case studies and supporting diagrams are available on the website.',width=760,size=9,color=muted);c.showPage()
 for a in d['cases']:
  start('CASE '+a['number']+' / '+a['category'],a['short'])
@@ -31,7 +31,8 @@ for a in d['cases']:
  for i,(v,l) in enumerate(a['metrics']):
   x=35+i*263;txt(x,y+22,v,23,True,teal);p(x,y+31,l,width=246,size=8.7,color=muted)
  top=y+80;y1=p(35,top,'What I owned',size=14,bold=True)
- for t in a['ownership']:y1=p(35,y1,'• '+t,width=365,size=10)
+ ownership = [title+': '+detail for title,detail in a['tiles']] if a['id']=='genai' else a['ownership']
+ for t in ownership:y1=p(35,y1,'• '+t,width=365,size=10)
  y2=p(442,top,'Engineering decisions',size=14,bold=True)
  for title,t in a['decisions']:
   y2=p(442,y2,title,width=365,size=10,bold=True);y2=p(442,y2-5,t,width=365,size=9.7,color=muted)
@@ -39,7 +40,21 @@ for a in d['cases']:
  if low>515:raise RuntimeError((a['id'],'overflow',low))
  p(35,low,'Scope: '+a['scope'],width=770,size=8.1,color=muted)
  c.showPage()
+ if a['id']=='genai':
+  start('CASE 01 / TOOLING & PRODUCTION','Hands-on AI platform engineering')
+  y=105
+  for title,body in [
+   ('Go & platform automation','Personally wrote or modified the model-weight checksum CLI and Kubernetes Kafka topic/user resource generator. Built lifecycle automation in Python, Terraform, CloudFormation and Ansible.'),
+   ('GPU & model serving', 'Co-owned GPU Kubernetes setup, upgrades, patching and operations on NVIDIA V100, A10G, L40S and A100 GPUs. Owned model-weight onboarding and serving tooling with Helm, Argo CD and vLLM.'),
+   ('Model platform', a['model_platform']),
+   ('Production investigation', 'Co-owned observability and incident response. Investigated network PCAP, p95/p99 latency, request/ingestion queues and Kubernetes PVC failures.'),
+   ('Scale & configuration', 'Supported 15,000+ embedding collections across five Solr clusters in one region, at least 90% active. Production configurations specified 226 application workers across two AWS regions and 105 document-processing replicas; these are configured counts, not live fleet inventory.')]:
+   y=p(35,y,title,width=770,size=12,bold=True)
+   y=p(35,y-4,body,width=770,size=10.5)
+  y=p(35,y,a['model_scope'],width=770,size=8.5,color=muted)
+  if y>550:raise RuntimeError(('genai-extra','overflow',y))
+  c.showPage()
  start('CASE '+a['number']+' / ARCHITECTURE',a['short'])
  f=R/'.build'/(a['diagram']+'.png');im=Image.open(f);w,h=im.size;scale=min(770/w,450/h);ww,hh=w*scale,h*scale;c.drawImage(str(f),35+(770-ww)/2,H-100-hh,ww,hh,mask='auto')
  url='https://offroadguy.github.io/cases/'+a['id']+'.html';txt(35,555,'Explore the full-size diagram, system flow, results and supporting views online →',9,True,teal);c.linkURL(url,(35,32,805,51),relative=0);c.showPage()
-c.save();print('Created 9-page case-study pack')
+c.save();print('Created',page,'page case-study pack')

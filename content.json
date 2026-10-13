@@ -1,7 +1,7 @@
 {
   "name": "Venkata Ganji",
-  "headline": "AI infrastructure. Distributed systems. Production ownership.",
-  "intro": "AI platform infrastructure and distributed systems engineer with 12 years in production. Across Apple, Freddie Mac and startup environments, I have shipped tooling, architected critical migrations and owned infrastructure from deployment through incident recovery.",
+  "headline": "AI infrastructure. Platform engineering. Production ownership.",
+  "intro": "AI infrastructure and platform engineer with 12 years building and operating production distributed systems. At Apple, I co-owned an internal enterprise e2e private AI serving platform and owned model-weight tooling and Solr infrastructure. My work connects architecture, hands-on automation, performance engineering and incident response.",
   "linkedin": "https://www.linkedin.com/in/venkata-sai-ganji-3a30a2a4/",
   "cases": [
     {
@@ -11,12 +11,16 @@
       "short": "Enterprise GenAI platform",
       "category": "AI INFRASTRUCTURE",
       "engagement": "Apple · Contract via Mphasis · Apr 2024–Aug 2026",
-      "role": "GenAI Platform Engineering & Cloud Architect",
+      "role": "AI Platform Engineering / Infrastructure / Operations",
       "color": "teal",
       "diagram": "genai",
-      "deck": "Connecting enterprise knowledge to model-backed applications—and owning the infrastructure that keeps retrieval and serving reliable.",
-      "summary": "I owned Kubernetes, vector databases, platform operations and GPU-serving infrastructure within an internally engineered enterprise AI platform. I shipped model-weight onboarding, deployment and Solr lifecycle tooling, connecting ingestion, retrieval and model serving with production reliability.",
+      "deck": "Model-weight onboarding, GPU Kubernetes operations, search infrastructure and production reliability across an internal enterprise AI serving platform.",
+      "summary": "I co-owned platform engineering, GPU/Kubernetes infrastructure, ingestion and inference GitOps onboarding, and observability for an internal enterprise e2e private AI serving platform. I owned model-weight serving and onboarding tooling, Solr infrastructure and performance engineering, and Mac document-conversion infrastructure. Elasticsearch and Milvus were shared ownership.",
       "metrics": [
+        [
+          "15,000+ collections",
+          "Project embeddings across five Solr clusters in one region; at least 90% active"
+        ],
         [
           "7.0s → 1.9s",
           "Approximate vector-query latency"
@@ -24,18 +28,16 @@
         [
           "$500K+",
           "Combined Solr + Mac infrastructure savings"
-        ],
-        [
-          "250+ nodes",
-          "Across vector-database infrastructure"
         ]
       ],
       "problem": "Enterprise teams needed a shared platform for document Q&A, enterprise chat, incident intelligence and coding-agent workflows. These experiences depended on more than a model endpoint: documents had to be ingested, transformed and indexed; retrieval had to remain responsive; and model deployments needed repeatable artifact and runtime configuration. Different workloads also placed different demands on CPU, storage and GPU capacity.",
       "ownership": [
-        "Shipped and owned GPU model onboarding: Helm/Argo CD, custom vLLM images, weight staging and checksums, tensor parallelism, memory budgets and LoRA configuration.",
-        "Authored and owned end-to-end Solr IaC and lifecycle tooling; owned operations across vector databases, Redis, MongoDB, Elasticsearch and Kafka.",
-        "Productionized 10+ ingestion and inference microservices across Dev/UAT/Prod; owned Kubernetes operations, upgrades, routing, autoscaling and capacity planning.",
-        "Owned observability from metrics and logs to dashboards and alerts, operational automation and recovery workflows; helped turn recurring failures into lasting fixes."
+        "Owned model-weight serving and onboarding tooling, rapid prototyping and decommissioning: Helm/Argo CD, vLLM, S3-to-FSx weight staging, checksum validation, read-only mounts, up to eight-way tensor parallelism, memory sizing, context limits and LoRA configuration.",
+        "Owned Solr 9.9 infrastructure, performance engineering, IaC and lifecycle tooling at approximately 200-node, multi-region scale. Supported 15,000+ project-embedding collections across five clusters in one region, with at least 90% active. Co-owned Elasticsearch and Milvus.",
+        "Co-owned ingestion/inference Kubernetes platform engineering and operations; partnered with developers on GitOps onboarding across Dev/UAT/Prod. Co-owned GPU cluster setup, upgrades, patching and operations on AWS EC2 with NVIDIA V100, A10G, L40S and A100 GPUs.",
+        "Developed Go tools for model-weight checksums and Kubernetes Kafka topic/user resource generation; built infrastructure and lifecycle automation using Python, Terraform, CloudFormation and Ansible.",
+        "Co-owned logging, dashboards, alerting and incident response. Investigated production failures using network PCAP, application p95/p99 latency, request and ingestion queue backlogs, and Kubernetes PVC diagnostics.",
+        "Owned Mac conversion infrastructure, IaC and tooling for Keynote, Numbers and Pages conversion to Office/PDF; productionized EC2 Mac conversion with application developers."
       ],
       "flow": [
         [
@@ -70,21 +72,24 @@
         ]
       ],
       "results": [
-        "Expanded and automated infrastructure from approximately 10 to 250+ nodes, supporting about 200 TB of vector indices across Solr, Milvus and OpenSearch.",
-        "Reduced vector-query latency from approximately 7.0 seconds to 1.9 seconds through workload-specific tuning.",
-        "Architected a 200-node Solr migration to Graviton/ARM64, preserving query throughput and approximately 3,200 vCPU / 12.8 TB RAM capacity while reducing cost 19.8% ($266K+ annualized).",
-        "Helped reduce production incidents from approximately 20 per day to 2 per week through shared reliability work, observability and recurring-failure remediation.",
-        "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates reported separately: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion, productionized with application developers. The combined figure is not stated as an annual total."
+        "Supported 15,000+ project-embedding collections across five Solr clusters in one region, with at least 90% active; owned Solr infrastructure at approximately 200-node, multi-region scale.",
+        "Reduced vector-query latency from approximately 7.0 seconds to 1.9 seconds through JVM/GC, operating-system, cache, query and index tuning.",
+        "Migrated 200 Solr nodes to Graviton/ARM64 while preserving query throughput, reducing cost 19.8% ($266K+ annualized).",
+        "Production configurations specified 226 application-cluster workers across two AWS regions and 105 West-region document-processing replicas for parsing, chunking and PDF conversion. These are configured desired counts, not a live fleet inventory.",
+        "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion. The combined figure is not stated as an annual total."
       ],
-      "operations": "The operating model combined application GitOps with model deployment automation and dedicated search lifecycle tools. Solr utilities supported availability-zone-aware replica placement, old/new-node replica transitions, serial restarts with recovery checks, and document-count comparisons. These are concrete controls I can explain during a migration or reliability interview.",
-      "scope": "Sanitized logical composite of production configuration families and my account of the platform. It is not a live cluster inventory. Results are reported career outcomes; no LLM throughput, TTFT or GPU-utilization improvement is claimed. Solr authorship does not imply sole authorship of the broader platform or upstream components.",
+      "operations": "My production work connected platform tooling with incident investigation: network PCAP, p95/p99 application latency, request and ingestion queues, and Kubernetes persistent storage. Solr lifecycle utilities supported availability-zone-aware replica placement, old/new-node replica transitions, serial restarts with recovery checks and document-count comparisons. Model-weight integrity checks and Kafka resource generation were implemented in Go tooling I personally wrote or modified.",
+      "scope": "Sanitized logical architecture, with personal and team ownership distinguished. Configured worker and replica counts describe desired configuration rather than a live fleet inventory. Model names describe platform serving scope, not training ownership. Latency figures refer to vector queries; no LLM throughput, TTFT or GPU-utilization improvement is claimed.",
       "tags": [
-        "EKS",
+        "Kubernetes/EKS",
         "vLLM",
-        "SolrCloud",
+        "Solr 9.9",
+        "Elasticsearch",
+        "Milvus",
+        "Go",
+        "Python",
         "Argo CD",
         "Helm",
-        "Flux",
         "FSx",
         "Terraform",
         "Ansible"
@@ -104,19 +109,26 @@
       ],
       "tiles": [
         [
-          "MODEL SERVING & TOOLING",
-          "Shipped vLLM deployment tooling and model-weight onboarding."
+          "MODEL-WEIGHT TOOLING",
+          "Owned serving, onboarding, rapid prototyping and decommissioning tooling."
         ],
         [
-          "DATA & PERFORMANCE",
-          "Owned vector stores, database operations and retrieval performance."
+          "SEARCH & VECTOR INFRASTRUCTURE",
+          "Owned Solr; co-owned Elasticsearch and Milvus: provisioning, tuning, tooling and IaC."
         ],
         [
-          "PLATFORM RELIABILITY",
-          "Owned Kubernetes, IaC, observability, capacity and recovery."
+          "KUBERNETES PLATFORM OPERATIONS",
+          "Co-owned ingestion/inference and GPU Kubernetes lifecycle, GitOps and operations."
+        ],
+        [
+          "PRODUCTION RELIABILITY",
+          "Co-owned observability and incident response across network, application, queues and storage."
         ]
       ],
-      "technology_key": "Apple"
+      "technology_key": "Apple",
+      "model_platform": "Apple foundation models; Qwen3.5-397B-A17B-FP8; Qwen3-32B; Mixtral-8x22B-Instruct-v0.1; gpt-oss-120b; Pixtral-12B-2409.",
+      "model_scope": "Model identifiers reflect serving-platform scope. No Apple foundation-model version or model-training ownership is asserted.",
+      "cloud_experience": "AWS infrastructure and GCP Vertex AI platform engineering; production PostgreSQL experience across Apple, Freddie Mac and Cloudwick."
     },
     {
       "id": "cyber-data",
@@ -517,58 +529,32 @@
   ],
   "capabilities": [
     {
-      "title": "LLM model serving",
-      "description": "Ship and own model-weight onboarding, deployment tooling and production GPU-serving infrastructure.",
-      "detail": "vLLM · Helm · Argo CD · EKS",
-      "case": "genai"
+      "title": "GPU model serving & tooling",
+      "description": "Owned model-weight serving and onboarding tooling, rapid prototyping and decommissioning; co-owned GPU Kubernetes operations.",
+      "detail": "vLLM · Helm/Argo CD · S3/FSx · Go checksums",
+      "case": "genai",
+      "anchor": "context"
     },
     {
-      "title": "Distributed systems SME",
-      "description": "Own distributed infrastructure across hardware, networking, ingestion, storage, capacity and recovery.",
-      "detail": "Petabyte-scale data systems",
-      "case": "cyber-data"
+      "title": "Search & vector infrastructure",
+      "description": "Owned Solr infrastructure, IaC and performance engineering; co-owned Elasticsearch and Milvus.",
+      "detail": "15,000+ collections · Five Solr clusters · ~200 nodes",
+      "case": "genai",
+      "anchor": "outcomes"
     },
     {
-      "title": "Vector database ownership",
-      "description": "Own retrieval infrastructure through provisioning, scaling, tuning and production support.",
-      "detail": "Solr · Milvus · OpenSearch",
-      "case": "genai"
+      "title": "Kubernetes platform engineering",
+      "description": "Co-owned ingestion/inference and GPU Kubernetes lifecycle, GitOps onboarding and production operations.",
+      "detail": "Setup · Upgrades · Patching · Developer tooling",
+      "case": "genai",
+      "anchor": "architecture"
     },
     {
-      "title": "Solutions architecture & migrations",
-      "description": "Rearchitect mission-critical platforms and lead software delivery, data movement, validation and production transition.",
-      "detail": "Hadoop · Solr · HBase · AWS",
-      "case": "migration"
-    },
-    {
-      "title": "Observability: logs to alerts",
-      "description": "Connect logs and metrics to dashboards, actionable alerts and production diagnosis.",
-      "detail": "Logging · Metrics · Dashboards · Alerting",
-      "case": "genai"
-    },
-    {
-      "title": "End-to-end IaC tooling",
-      "description": "Author and ship repeatable provisioning, configuration and lifecycle tools, from infrastructure builds to safe recovery.",
-      "detail": "Terraform · CloudFormation · Ansible · Python",
-      "case": "cloud-foundations"
-    },
-    {
-      "title": "Disaster recovery",
-      "description": "Design recovery infrastructure and automation around the application’s continuity requirements.",
-      "detail": "Delivered DR: ~15-minute RPO / ~2-hour RTO",
-      "case": "cloud-foundations"
-    },
-    {
-      "title": "Performance tuning",
-      "description": "Trace bottlenecks across the runtime, query path, cache, operating system and storage.",
-      "detail": "JVM / GC · Query / index · Cache · OS",
-      "case": "genai"
-    },
-    {
-      "title": "Cybersecurity telemetry",
-      "description": "Integrate multiple security data sources into a correlated telemetry and analytics platform.",
-      "detail": "PCAP · NetFlow · App logs · Firewall events",
-      "case": "cyber-data"
+      "title": "Production reliability & distributed systems",
+      "description": "Diagnose failures across network, applications, queues and storage; build provisioning, recovery and operational automation.",
+      "detail": "PCAP · p95/p99 · PVCs · IaC · HA/DR",
+      "case": "cloud-foundations",
+      "anchor": "outcomes"
     }
   ],
   "technology_strips": {
@@ -578,40 +564,44 @@
         "NVIDIA"
       ],
       [
-        "solr",
-        "Solr"
-      ],
-      [
         "aws",
         "AWS"
       ],
       [
         "gcp",
-        "GCP"
-      ],
-      [
-        "mongodb",
-        "MongoDB"
+        "GCP / Vertex AI"
       ],
       [
         "kubernetes",
-        "K8s"
-      ],
-      [
-        "prometheus",
-        "Prometheus"
-      ],
-      [
-        "terraform",
-        "Terraform"
+        "Kubernetes"
       ],
       [
         "vllm",
         "vLLM"
       ],
       [
-        "huggingface",
-        "Hugging Face"
+        "solr",
+        "Solr"
+      ],
+      [
+        "",
+        "Elasticsearch"
+      ],
+      [
+        "",
+        "Milvus"
+      ],
+      [
+        "",
+        "Go"
+      ],
+      [
+        "python",
+        "Python"
+      ],
+      [
+        "terraform",
+        "Terraform"
       ],
       [
         "helm",
@@ -622,16 +612,16 @@
         "Argo CD"
       ],
       [
+        "prometheus",
+        "Prometheus"
+      ],
+      [
         "grafana",
         "Grafana"
       ],
       [
-        "dr",
-        "Disaster recovery"
-      ],
-      [
-        "ha",
-        "High availability"
+        "",
+        "PostgreSQL"
       ]
     ],
     "Freddie Mac": [
@@ -666,6 +656,10 @@
       [
         "databricks",
         "Databricks"
+      ],
+      [
+        "",
+        "PostgreSQL"
       ]
     ],
     "Cyber Data Lake / Amorphic": [
@@ -683,7 +677,7 @@
       ],
       [
         "rust",
-        "Rust"
+        "Rust exposure"
       ],
       [
         "bash",
@@ -742,6 +736,10 @@
       [
         "ansible",
         "Ansible"
+      ],
+      [
+        "",
+        "PostgreSQL"
       ]
     ],
     "Next focus": [
@@ -764,7 +762,7 @@
     [
       "Apple",
       "AI platform infrastructure & model serving",
-      "Kubernetes, vector databases, model-weight onboarding, IaC and production reliability."
+      "Owned model-weight and Solr tooling; co-owned GPU/Kubernetes platforms, Elasticsearch, Milvus and production reliability. AWS and GCP Vertex AI platform engineering."
     ],
     [
       "Freddie Mac",
@@ -779,7 +777,10 @@
     [
       "Earlier",
       "Cloud & distributed data foundations",
-      "Cloud engineering, Hadoop/HBase operations, automation and high availability across earlier engagements."
+      "Cloud engineering, including Azure data-lake work at Cloudwick, Hadoop/HBase operations, automation and high availability across earlier engagements."
     ]
-  ]
+  ],
+  "email": "venkataganji.careers@gmail.com",
+  "phone": "925-272-9870",
+  "education": "Master’s in Computer Science, Texas A&M University, 2014; additional graduate study at Montana State University, 15 credits."
 }

@@ -74,3 +74,72 @@ footer p,footer small,.back-link,.tags span,.case-layout>aside a,
   .technology-strip li{font-size:12px}
   footer small{font-size:13px}
 }
+
+/* Kubernetes operations and inference study: a shared visual story, distinct scope. */
+.engineering-feature{max-width:1440px;margin:0 auto;padding:78px 5% 0;min-width:0}
+.engineering-intro{max-width:850px;margin-bottom:30px}
+.engineering-intro .eyebrow{margin-bottom:14px}
+.engineering-intro h2{max-width:800px;margin-bottom:22px}
+.engineering-intro>p:last-child{font-size:16px;line-height:1.8;margin-bottom:0}
+.feature-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:30px;align-items:center;margin:28px 0}
+.feature-layout>*,.engineering-cards>*,.experience-split>*{min-width:0}
+.feature-layout p,.engineering-cards p,.experience-split p{overflow-wrap:anywhere}
+.feature-media{margin:0;padding:18px;border:1px solid #35486a;border-radius:10px;background:linear-gradient(135deg,#13213a,#0e1522);overflow:hidden}
+.feature-media img,.feature-media svg{display:block;width:100%;height:auto;max-width:100%}
+.feature-media figcaption{font-size:13px;line-height:1.7;color:#adbedb;margin-top:14px}
+.engineering-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0}
+.engineering-cards article{padding:24px;border:1px solid #33415a;border-radius:8px;background:#111a29}
+.engineering-cards h3{font-size:20px;color:#dbe7ff;margin-bottom:12px}
+.engineering-cards p{font-size:14px;line-height:1.8;margin-bottom:0}
+.engineering-cards .eyebrow{font-size:12px;color:#9bb8ff;margin-bottom:12px}
+.engineering-feature>.actions{margin-bottom:0}
+.section-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 28px;padding:0}
+.section-jumps a{display:inline-flex;align-items:center;gap:9px;padding:9px 14px;border:1px solid #405579;border-radius:6px;background:#131d30;color:#c5d8ff;font-size:13px;font-weight:600;text-decoration:none;max-width:100%;overflow-wrap:anywhere}
+.section-jumps a:hover{background:#1b2b48;border-color:#7ea7ff;color:white}
+.stack-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:28px 0}
+.stack-groups details{margin:0;padding:18px 20px;border:1px solid #35415b;border-radius:7px;background:#101824;min-width:0;align-self:start}
+.stack-groups summary{cursor:pointer;color:#d4e1f8;font-size:15px;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
+.stack-groups details[open]{background:#142139;border-color:#526e9e}
+.stack-groups p{font-size:14px;line-height:1.8;margin:14px 0 0;overflow-wrap:anywhere}
+.experience-split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:28px 0}
+.experience-split article{padding:26px;border:1px solid #405578;border-radius:8px;background:#142038}
+.experience-split article+article{background:#161e2e;border-color:#444d69}
+.experience-split h3{font-size:21px;margin-bottom:14px;color:#e0eaff}
+.experience-split p{font-size:14px;line-height:1.8;margin-bottom:0}
+.experience-split .eyebrow{margin-bottom:12px;color:#a6bfff}
+.learning-feature .engineering-intro .eyebrow{color:#bec3ff}
+.learning-feature .feature-media{background:linear-gradient(135deg,#1b2140,#101725);border-color:#4a527f}
+.engineering-feature .scope{color:#acbad1;font-size:13px;line-height:1.8;margin-top:24px}
+.case-content .engineering-feature{padding:0;margin-bottom:65px;max-width:none}
+.case-content .engineering-feature .engineering-cards{grid-template-columns:1fr}
+.case-content .engineering-feature .stack-groups{grid-template-columns:1fr}
+.case-content .engineering-feature .stack-groups details{margin:0}
+@media(max-width:1000px){
+  .feature-layout{grid-template-columns:1fr;gap:22px}
+  .engineering-cards article{padding:20px}
+}
+@media(max-width:700px){
+  .engineering-feature{padding-top:52px}
+  .engineering-intro{margin-bottom:24px}
+  .engineering-intro>p:last-child{font-size:15px}
+  .engineering-cards,.stack-groups,.experience-split{grid-template-columns:1fr;gap:12px}
+  .engineering-cards article,.experience-split article{padding:22px}
+  .feature-media{padding:10px;border-radius:8px}
+  .feature-media figcaption{margin:12px 5px 4px;font-size:13px}
+  .section-jumps{gap:8px}
+  .section-jumps a{padding:8px 11px;font-size:13px}
+  .case-content .engineering-feature{margin-bottom:45px}
+}
+@media print{
+  .engineering-feature{padding:30px 0 0}
+  .engineering-cards article,.experience-split article,.stack-groups details,.feature-media{background:#edf1f8;border-color:#9daecc}
+  .engineering-cards h3,.experience-split h3,.stack-groups summary{color:#162134}
+  .section-jumps{display:none}
+}
+
+/* Align local navigation and use the dark treatment for new diagrams. */
+.section-jumps{max-width:1440px;margin:28px auto 0;padding:0 5%}
+.engineering-feature .diagram-open{background:#111a29;border-color:#35486a;padding:14px}
+.engineering-feature .diagram-open>span{color:#c1d1fa}
+.case-content .engineering-feature .feature-layout{grid-template-columns:1fr}
+.experience-split ul{padding-left:18px;color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:0}

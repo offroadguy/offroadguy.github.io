@@ -37,3 +37,7 @@ The public portfolio offers only the PDF resume. Editable Word releases remain i
 ## Portfolio refresh v2.2.0 — October 13, 2026
 
 Ownership-first overview with four responsibilities; case studies immediately follow the AI platform overview. Navigation now provides AI Platform, Case Studies, Resume and email Contact on desktop and mobile. Corrected current PDF resume, contact and earned CS master’s degree. Added personally developed Go checksum/Kafka resource tools, NVIDIA GPU names, approved model identifiers, Solr collection scale and production incident investigation. Configuration counts are labeled as configured values. Ten-page case-study download aligned with updated narrative. Button contrast and small supporting text improved.
+
+## Kubernetes and inference chapters (October 13, 2026)
+
+The homepage introduces Kubernetes/GPU operations and inference engineering after the ownership overview. Both link to dedicated chapters within the AI platform case. Repository-backed tools are grouped separately from individual ownership; Abi Aryan coursework and next-focus tools are marked as ongoing learning. New SVG illustrations are sanitized conceptual views. Existing PDF downloads are unchanged in this update.

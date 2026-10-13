@@ -547,7 +547,7 @@
       "description": "Co-owned ingestion/inference and GPU Kubernetes lifecycle, GitOps onboarding and production operations.",
       "detail": "Setup · Upgrades · Patching · Developer tooling",
       "case": "genai",
-      "anchor": "architecture"
+      "anchor": "kubernetes"
     },
     {
       "title": "Production reliability & distributed systems",
@@ -755,6 +755,50 @@
         "lmcache",
         "LMCache"
       ]
+    ],
+    "Kubernetes foundation": [
+      [
+        "kubernetes",
+        "Kubernetes"
+      ],
+      [
+        "nvidia",
+        "NVIDIA GPU platform"
+      ],
+      [
+        "helm",
+        "Helm"
+      ],
+      [
+        "argo",
+        "Argo CD"
+      ],
+      [
+        "prometheus",
+        "Prometheus"
+      ],
+      [
+        "grafana",
+        "Grafana"
+      ]
+    ],
+    "Inference production": [
+      [
+        "vllm",
+        "vLLM"
+      ],
+      [
+        "nvidia",
+        "NVIDIA GPUs"
+      ],
+      [
+        "kubernetes",
+        "Kubernetes"
+      ],
+      [
+        "s3",
+        "S3 / FSx weight staging"
+      ]
     ]
   },
   "inference_focus": "Ready to build on production vLLM experience and take on deeper inference engineering deliverables using GenAI-Perf, SGLang and LMCache.",
@@ -782,5 +826,81 @@
   ],
   "email": "venkataganji.careers@gmail.com",
   "phone": "925-272-9870",
-  "education": "Master’s in Computer Science, Texas A&M University, 2014; additional graduate study at Montana State University, 15 credits."
+  "education": "Master’s in Computer Science, Texas A&M University, 2014; additional graduate study at Montana State University, 15 credits.",
+  "kubernetes_story": {
+    "title": "The Kubernetes foundation behind AI serving.",
+    "intro": "At Apple, I co-owned the Kubernetes foundation for GPU model hosting and the ingestion and inference services around it—from cluster setup, upgrades and patching to GitOps onboarding and production operations.",
+    "cards": [
+      [
+        "Build and evolve the platform",
+        "Co-owned application and GPU cluster lifecycle across NVIDIA V100, A10G, L40S and A100 environments. Kept infrastructure changes connected to the workloads using it."
+      ],
+      [
+        "Onboard and scale workloads",
+        "Partnered with developers on GitOps onboarding. Owned model-weight serving and lifecycle tooling, including a Go checksum CLI, and wrote or modified Go tooling for Kafka topic/user resource generation."
+      ],
+      [
+        "Operate across system boundaries",
+        "Co-owned observability and incident response. Followed failures through network PCAP, p95/p99 latency, ingestion and request queues, and Kubernetes persistent storage."
+      ]
+    ],
+    "stages": [
+      [
+        "Provision and evolve",
+        "Application services and GPU model hosting ran in separate Kubernetes environments. I co-owned setup, upgrades, patching and operations, connecting cluster lifecycle work to workload requirements."
+      ],
+      [
+        "Onboard and release",
+        "I worked closely with developers on GitOps onboarding across Dev/UAT/Prod. For model serving, I owned weight onboarding and lifecycle tooling: staging artifacts, validating checksums, configuring mounts and making deployments repeatable."
+      ],
+      [
+        "Support capacity and connectivity",
+        "The platform used node provisioning, workload autoscaling, GPU enablement, service networking and policy controls. These components supported different cluster generations and workload types; the stack below shows the platform capabilities around my engineering work."
+      ],
+      [
+        "Observe and investigate",
+        "Production diagnosis crossed infrastructure and application boundaries: network captures, p95/p99 latency, request and ingestion backlogs, and PVC/storage failures. Logging, dashboards, alerts and operational tooling made those boundaries visible."
+      ]
+    ],
+    "stack": [
+      [
+        "Deployment and GitOps",
+        "FluxCD · Helm · Kustomize · Argo CD · Flagger"
+      ],
+      [
+        "Capacity and GPU enablement",
+        "Karpenter · KEDA · HPA · Prometheus Adapter · NVIDIA GPU Operator"
+      ],
+      [
+        "Networking and service connectivity",
+        "Istio ambient mesh · NGINX Ingress · Envoy Gateway · AWS VPC CNI · Calico · Cilium"
+      ],
+      [
+        "Observability",
+        "Prometheus Operator · Grafana"
+      ],
+      [
+        "Security and persistent storage",
+        "cert-manager · OPA Gatekeeper · Kubernetes RBAC · NetworkPolicy · Amazon EFS CSI"
+      ]
+    ],
+    "scope": "Tools reflect repository-backed platform configuration across different clusters and generations. Personal ownership is stated separately. Calico and Cilium were used in different cluster configurations; the diagram groups capabilities rather than asserting one identical installation everywhere."
+  },
+  "inference_story": {
+    "title": "Building deeper inference engineering expertise.",
+    "intro": "My inference engineering foundation comes from production platform work. At Apple, I worked alongside developers on an AI serving platform—owning model-weight onboarding and serving tooling, working with vLLM deployment configuration, and co-owning GPU Kubernetes operations.",
+    "learning": "I’m now deepening that foundation through Abi Aryan’s inference engineering course. My focus is understanding how serving behavior connects to GPU memory, prefill and decode, KV-cache management, and latency and throughput tradeoffs.",
+    "contribution": "I can contribute immediately to serving-platform infrastructure, deployment tooling and production troubleshooting, while learning the deeper inference internals as I go. I bring distributed-systems judgment, a habit of investigating across layers, and accountability for production behavior.",
+    "production": [
+      "Model-weight staging and checksum validation",
+      "vLLM runtime and deployment configuration",
+      "GPU Kubernetes operations and serving-platform collaboration"
+    ],
+    "study": [
+      "Prefill/decode and KV-cache behavior",
+      "Serving performance and reproducible benchmarking",
+      "Next tools to explore: GenAI-Perf, SGLang and LMCache"
+    ],
+    "scope": "Apple experience covers serving-platform infrastructure and tooling. Deeper inference optimization and the next-focus tools are part of my ongoing learning."
+  }
 }

@@ -19,7 +19,7 @@ def p(x,y,s,width=365,size=10.3,bold=False,color=ink):
 page=0
 def start(kicker,title):
  global page;page+=1;c.setFillColor(HexColor('#f7f8f3'));c.rect(0,0,W,H,fill=1,stroke=0);c.setFillColor(HexColor(teal));c.rect(0,H-7,W,7,fill=1,stroke=0);txt(35,35,kicker,9,True,teal);txt(35,69,title,25,True);txt(35,574,'Venkata Ganji | Architecture portfolio | offroadguy.github.io',8,color=muted);txt(794,574,str(page),8,color=muted);c.linkURL('https://offroadguy.github.io/',(35,12,425,31),relative=0)
-start('ENGINEERING PORTFOLIO / OCTOBER 2026','AI infrastructure and distributed systems')
+start('ENGINEERING PORTFOLIO / NOVEMBER 2026','AI infrastructure and distributed systems')
 y=p(35,100,'Venkata Ganji',width=750,size=30,bold=True);y=p(35,y+8,d['intro'],width=730,size=17)
 for i,a in enumerate(d['cases']):
  yy=285+i*55;txt(35,yy,a['number'],14,True,teal);txt(75,yy,a['short'],17,True);p(75,yy+10,a['engagement'],width=720,size=10,color=muted);c.linkURL('https://offroadguy.github.io/cases/'+a['id']+'.html',(35,H-yy-35,810,H-yy+20),relative=0)
@@ -37,15 +37,16 @@ for a in d['cases']:
  for title,t in a['decisions']:
   y2=p(442,y2,title,width=365,size=10,bold=True);y2=p(442,y2-5,t,width=365,size=9.7,color=muted)
  low=max(y1,y2)+2
- if low>515:raise RuntimeError((a['id'],'overflow',low))
- p(35,low,'Scope: '+a['scope'],width=770,size=8.1,color=muted)
+ if low>530:raise RuntimeError((a['id'],'overflow',low))
+ scope_end=p(35,low,'Scope: '+a['scope'],width=770,size=8.1,color=muted)
+ if scope_end>555:raise RuntimeError((a['id'],'scope overflow',scope_end))
  c.showPage()
  if a['id']=='genai':
   start('CASE 01 / TOOLING & PRODUCTION','Hands-on AI platform engineering')
   y=105
   for title,body in [
-   ('Go & platform automation','Personally wrote or modified the model-weight checksum CLI and Kubernetes Kafka topic/user resource generator. Built lifecycle automation in Python, Terraform, CloudFormation and Ansible.'),
-   ('GPU & model serving', 'Co-owned GPU Kubernetes setup, upgrades, patching and operations on NVIDIA V100, A10G, L40S and A100 GPUs. Owned model-weight onboarding and serving tooling with Helm, Argo CD and vLLM.'),
+   ('Go & platform automation','Developed Go model-checksum and Kafka resource-generation tools and a TypeScript deployment-configuration validator. Built lifecycle automation in Python, Terraform, CloudFormation and Ansible.'),
+   ('GPU & model serving', 'Owned GPU Kubernetes build, lifecycle, capacity planning and production operations on EKS. Operated GPU Operator, Karpenter, Calico/Cilium and DCGM; personally built model-onboarding and validation tooling.'),
    ('Model platform', a['model_platform']),
    ('Production investigation', 'Co-owned observability and incident response. Investigated network PCAP, p95/p99 latency, request/ingestion queues and Kubernetes PVC failures.'),
    ('Scale & configuration', 'Supported 15,000+ embedding collections across five Solr clusters in one region, at least 90% active. Production configurations specified 226 application workers across two AWS regions and 105 document-processing replicas; these are configured counts, not live fleet inventory.')]:

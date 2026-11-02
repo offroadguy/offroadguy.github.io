@@ -27,7 +27,7 @@ if (platformMap) {
     platformMap.classList.toggle('focus-ownership', focus);
     controls.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     document.querySelector('.platform-view-note').textContent = focus
-      ? 'Ownership comes first: model lifecycle tooling and Solr were owned; Elasticsearch, Milvus, application Kubernetes and GPU infrastructure were co-owned with the team.'
+      ? 'I owned GPU Kubernetes engineering, model lifecycle tooling and Solr infrastructure; Elasticsearch, Milvus and application platform engineering were co-owned with the team.'
       : 'Platform context: enterprise applications use shared ingestion, retrieval and serving infrastructure. The ownership labels describe my responsibilities within that team platform.';
   }));
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {

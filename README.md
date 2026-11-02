@@ -45,3 +45,7 @@ The homepage introduces Kubernetes/GPU operations and inference engineering afte
 ## Cloud-native lifecycle (October 13, 2026)
 
 The opening summary and new homepage cloud-native section make end-to-end platform delivery explicit: design/provision, deploy/automate, observe/operate and HA/DR. The cloud foundations case includes the full lifecycle chapter. Freddie Mac recovery metrics remain scoped to its delivered DR environment; Apple team ownership remains explicit. PDF downloads are unchanged in this website-only update.
+
+## GPU platform ownership refresh November 2 2026
+
+Updated the homepage, ownership toggle and AI case study to reflect personally owned GPU Kubernetes build, lifecycle, tooling, capacity planning and production incident response. Added GPU Operator, Karpenter, Calico/Cilium, DCGM and TypeScript validation tooling in their operational context. Preserved team attribution for the wider AI/application platform and distinguished production serving work from ongoing inference optimization study. The public resume is the balanced two-page edition reviewed on November 2, with neutral public metadata. The ten-page case-study PDF was rebuilt to match. No private cluster identifiers, host inventory, capacity limits or model-version inventory were published.

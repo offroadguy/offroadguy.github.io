@@ -1,3 +1,10 @@
+## November 2 2026 — GPU platform ownership and serving infrastructure
+
+- Clarified personally owned GPU Kubernetes engineering across the homepage, case study, diagram and interactive ownership view.
+- Added GPU Operator, Karpenter, Calico/Cilium, DCGM, model artifact validation and TypeScript deployment tooling.
+- Retained search, cloud architecture, leadership and hardware experience and separated production serving from further inference study.
+- Aligned the public two-page resume and ten-page case-study pack.
+
 # v2.1.1 — 2026-10-08
 
 - Removed the Word resume link and public DOCX download. PDF resume remains available; private editable versions remain unchanged.

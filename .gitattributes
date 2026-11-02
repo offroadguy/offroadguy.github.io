@@ -1,0 +1,3 @@
+
+# Generated PDF downloads are binary artifacts.
+*.pdf binary

@@ -1,7 +1,7 @@
 {
   "name": "Venkata Ganji",
   "headline": "AI infrastructure. Platform engineering. Production ownership.",
-  "intro": "AI infrastructure and platform engineer with 12 years building and operating production distributed systems. I build cloud-native platforms from the initial architecture and infrastructure foundations through deployment, observability, high availability and disaster recovery. At Freddie Mac, I designed and productionized cloud infrastructure and recovery systems. At Apple, I co-owned AI platform engineering and owned model-weight tooling and Solr infrastructure.",
+  "intro": "AI infrastructure and platform engineer with 12 years building and operating production distributed systems. At Apple, I owned GPU Kubernetes platform engineering, model-onboarding tooling and Solr infrastructure within a shared enterprise AI platform. My work connects cloud architecture, hardware, deployment automation, performance engineering and production reliability—from building the foundation to observability, high availability and recovery.",
   "linkedin": "https://www.linkedin.com/in/venkata-sai-ganji-3a30a2a4/",
   "cases": [
     {
@@ -14,8 +14,8 @@
       "role": "AI Platform Engineering / Infrastructure / Operations",
       "color": "teal",
       "diagram": "genai",
-      "deck": "Model-weight onboarding, GPU Kubernetes operations, search infrastructure and production reliability across an internal enterprise AI serving platform.",
-      "summary": "I co-owned platform engineering, GPU/Kubernetes infrastructure, ingestion and inference GitOps onboarding, and observability for an internal enterprise e2e private AI serving platform. I owned model-weight serving and onboarding tooling, Solr infrastructure and performance engineering, and Mac document-conversion infrastructure. Elasticsearch and Milvus were shared ownership.",
+      "deck": "GPU Kubernetes ownership, model-onboarding tooling, search performance and production reliability across an internal enterprise AI serving platform.",
+      "summary": "I owned GPU Kubernetes platform engineering, model-weight serving and onboarding tooling, Solr infrastructure and performance engineering, and Mac document-conversion infrastructure. I co-owned the wider enterprise AI platform with the team, including ingestion/inference GitOps onboarding and observability. Elasticsearch and Milvus were shared ownership.",
       "metrics": [
         [
           "15,000+ collections",
@@ -32,12 +32,14 @@
       ],
       "problem": "Enterprise teams needed a shared platform for document Q&A, enterprise chat, incident intelligence and coding-agent workflows. These experiences depended on more than a model endpoint: documents had to be ingested, transformed and indexed; retrieval had to remain responsive; and model deployments needed repeatable artifact and runtime configuration. Different workloads also placed different demands on CPU, storage and GPU capacity.",
       "ownership": [
-        "Owned model-weight serving and onboarding tooling, rapid prototyping and decommissioning: Helm/Argo CD, vLLM, S3-to-FSx weight staging, checksum validation, read-only mounts, up to eight-way tensor parallelism, memory sizing, context limits and LoRA configuration.",
-        "Owned Solr 9.9 infrastructure, performance engineering, IaC and lifecycle tooling at approximately 200-node, multi-region scale. Supported 15,000+ project-embedding collections across five clusters in one region, with at least 90% active. Co-owned Elasticsearch and Milvus.",
-        "Co-owned ingestion/inference Kubernetes platform engineering and operations; partnered with developers on GitOps onboarding across Dev/UAT/Prod. Co-owned GPU cluster setup, upgrades, patching and operations on AWS EC2 with NVIDIA V100, A10G, L40S and A100 GPUs.",
-        "Developed Go tools for model-weight checksums and Kubernetes Kafka topic/user resource generation; built infrastructure and lifecycle automation using Python, Terraform, CloudFormation and Ansible.",
-        "Co-owned logging, dashboards, alerting and incident response. Investigated production failures using network PCAP, application p95/p99 latency, request and ingestion queue backlogs, and Kubernetes PVC diagnostics.",
-        "Owned Mac conversion infrastructure, IaC and tooling for Keynote, Numbers and Pages conversion to Office/PDF; productionized EC2 Mac conversion with application developers."
+        "Owned GPU Kubernetes platform build, lifecycle, tooling, capacity planning and production operations on AWS EKS, including upgrades, patching and incident response. Operated NVIDIA V100, A10G, L40S and A100 infrastructure.",
+        "Operated NVIDIA GPU Operator, Karpenter and cluster networking across environments, including Calico/Cilium. Connected GPU workload placement and cluster lifecycle decisions to model-serving requirements.",
+        "Designed and built model-weight serving and onboarding tooling: Helm/Argo CD, vLLM, S3-to-FSx staging, checksum validation and read-only mounts. Worked with tensor parallelism, GPU memory sizing, context limits and LoRA configuration.",
+        "Owned Solr infrastructure, performance, IaC and lifecycle tooling at approximately 200-node, multi-region scale. Supported 15,000+ embedding collections across five clusters in one region; co-owned Elasticsearch and Milvus.",
+        "Developed Go model-checksum and Kafka topic/user resource-generation tools. Built a TypeScript CLI to validate GPU allocation, tensor parallelism, model paths, storage mounts and startup probes before deployment.",
+        "Operated DCGM GPU monitoring with Prometheus/Grafana and co-owned wider observability. Led investigations across deployment readiness, storage/PVC failures, networking, queues and p95/p99 latency; coordinated root-cause analysis and corrective actions.",
+        "Coordinated US/APAC engineers, guided migrations and mentored teammates. Worked directly with customer leaders on incoming workloads, capacity and service constraints; partnered with developers on application GitOps onboarding.",
+        "Owned Mac conversion infrastructure, IaC and tooling; productionized EC2 Mac conversion with application developers."
       ],
       "flow": [
         [
@@ -78,7 +80,7 @@
         "Production configurations specified 226 application-cluster workers across two AWS regions and 105 West-region document-processing replicas for parsing, chunking and PDF conversion. These are configured desired counts, not a live fleet inventory.",
         "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion. The combined figure is not stated as an annual total."
       ],
-      "operations": "My production work connected platform tooling with incident investigation: network PCAP, p95/p99 application latency, request and ingestion queues, and Kubernetes persistent storage. Solr lifecycle utilities supported availability-zone-aware replica placement, old/new-node replica transitions, serial restarts with recovery checks and document-count comparisons. Model-weight integrity checks and Kafka resource generation were implemented in Go tooling I personally wrote or modified.",
+      "operations": "I followed production failures across model artifacts, serving workloads, Kubernetes, storage and network dependencies. When incomplete model staging blocked checksum validation and serving readiness, I restored validated artifacts and made successful staging and validation a deployment prerequisite. I also diagnosed embedding-service timeouts caused by worker conntrack exhaustion, addressing connection pooling, bounded concurrency and conntrack sizing. DCGM GPU telemetry, Prometheus/Grafana, PCAP and application latency helped connect infrastructure behavior to user impact.",
       "scope": "Sanitized logical architecture, with personal and team ownership distinguished. Configured worker and replica counts describe desired configuration rather than a live fleet inventory. Model names describe platform serving scope, not training ownership. Latency figures refer to vector queries; no LLM throughput, TTFT or GPU-utilization improvement is claimed.",
       "tags": [
         "Kubernetes/EKS",
@@ -92,13 +94,19 @@
         "Helm",
         "FSx",
         "Terraform",
-        "Ansible"
+        "Ansible",
+        "NVIDIA GPU Operator",
+        "Karpenter",
+        "DCGM",
+        "Calico/Cilium",
+        "TypeScript"
       ],
       "supporting": [],
       "questions": [
-        "How did you diagnose the 7-second retrieval path?",
-        "How did you stage and validate model weights?",
-        "How did you plan replica transitions for the ARM migration?"
+        "How did you build and operate the GPU Kubernetes foundation?",
+        "How did you stage and validate model weights before serving?",
+        "How did you connect GPU capacity, model configuration and production reliability?",
+        "How did you diagnose the vector-query performance problem?"
       ],
       "originals": [
         {
@@ -109,25 +117,25 @@
       ],
       "tiles": [
         [
-          "MODEL-WEIGHT TOOLING",
-          "Owned serving, onboarding, rapid prototyping and decommissioning tooling."
+          "GPU KUBERNETES OWNERSHIP",
+          "Owned build, lifecycle, tooling, capacity planning and production operations."
         ],
         [
-          "SEARCH & VECTOR INFRASTRUCTURE",
+          "MODEL DELIVERY AND SERVING",
+          "Personally built onboarding, staging and validation tooling; vLLM deployment configuration."
+        ],
+        [
+          "SEARCH AND VECTOR INFRASTRUCTURE",
           "Owned Solr; co-owned Elasticsearch and Milvus: provisioning, tuning, tooling and IaC."
         ],
         [
-          "KUBERNETES PLATFORM OPERATIONS",
-          "Co-owned ingestion/inference and GPU Kubernetes lifecycle, GitOps and operations."
-        ],
-        [
           "PRODUCTION RELIABILITY",
-          "Co-owned observability and incident response across network, application, queues and storage."
+          "GPU Operator, Karpenter, networking and DCGM; incidents and customer workload planning."
         ]
       ],
       "technology_key": "Apple",
-      "model_platform": "Apple foundation models; Qwen3.5-397B-A17B-FP8; Qwen3-32B; Mixtral-8x22B-Instruct-v0.1; gpt-oss-120b; Pixtral-12B-2409.",
-      "model_scope": "Model identifiers reflect serving-platform scope. No Apple foundation-model version or model-training ownership is asserted.",
+      "model_platform": "General-purpose, reasoning, coding and vision/multimodal workloads, including Apple foundation models, Qwen, Mixtral and Pixtral.",
+      "model_scope": "Model families describe serving-platform experience, not model-training or inference-engine authorship. Deeper inference optimization is an ongoing learning focus.",
       "cloud_experience": "AWS infrastructure and GCP Vertex AI platform engineering; production PostgreSQL experience across Apple, Freddie Mac and Cloudwick."
     },
     {
@@ -531,7 +539,7 @@
   "capabilities": [
     {
       "title": "GPU model serving & tooling",
-      "description": "Owned model-weight serving and onboarding tooling, rapid prototyping and decommissioning; co-owned GPU Kubernetes operations.",
+      "description": "Owned model-weight serving and onboarding tooling, from artifact staging and validation to runtime configuration and production readiness.",
       "detail": "vLLM · Helm/Argo CD · S3/FSx · Go checksums",
       "case": "genai",
       "anchor": "context"
@@ -545,8 +553,8 @@
     },
     {
       "title": "Kubernetes platform engineering",
-      "description": "Co-owned ingestion/inference and GPU Kubernetes lifecycle, GitOps onboarding and production operations.",
-      "detail": "Setup · Upgrades · Patching · Developer tooling",
+      "description": "Owned GPU Kubernetes build, lifecycle, tooling, capacity planning and production operations; co-owned application platform engineering and GitOps onboarding.",
+      "detail": "EKS · GPU Operator · Karpenter · Calico/Cilium · DCGM",
       "case": "genai",
       "anchor": "kubernetes"
     },
@@ -623,6 +631,22 @@
       [
         "",
         "PostgreSQL"
+      ],
+      [
+        "nvidia",
+        "GPU Operator"
+      ],
+      [
+        "",
+        "Karpenter"
+      ],
+      [
+        "nvidia",
+        "DCGM"
+      ],
+      [
+        "",
+        "TypeScript"
       ]
     ],
     "Freddie Mac": [
@@ -760,11 +784,23 @@
     "Kubernetes foundation": [
       [
         "kubernetes",
-        "Kubernetes"
+        "Kubernetes / EKS"
       ],
       [
         "nvidia",
-        "NVIDIA GPU platform"
+        "GPU Operator"
+      ],
+      [
+        "",
+        "Karpenter"
+      ],
+      [
+        "",
+        "Calico / Cilium"
+      ],
+      [
+        "nvidia",
+        "DCGM"
       ],
       [
         "helm",
@@ -841,7 +877,7 @@
     [
       "Apple",
       "AI platform infrastructure & model serving",
-      "Owned model-weight and Solr tooling; co-owned GPU/Kubernetes platforms, Elasticsearch, Milvus and production reliability. AWS and GCP Vertex AI platform engineering."
+      "Owned GPU Kubernetes engineering, model-weight tooling and Solr infrastructure; co-owned the wider AI platform, Elasticsearch and Milvus. AWS and GCP Vertex AI platform engineering."
     ],
     [
       "Freddie Mac",
@@ -864,79 +900,84 @@
   "education": "Master’s in Computer Science, Texas A&M University, 2014; additional graduate study at Montana State University, 15 credits.",
   "kubernetes_story": {
     "title": "The Kubernetes foundation behind AI serving.",
-    "intro": "At Apple, I co-owned the Kubernetes foundation for GPU model hosting and the ingestion and inference services around it—from cluster setup, upgrades and patching to GitOps onboarding and production operations.",
+    "intro": "At Apple, I owned the GPU Kubernetes foundation on EKS: cluster build, lifecycle, tooling, capacity planning and production incidents. I also co-owned the application platform around it, partnering with developers on ingestion and inference GitOps onboarding.",
     "cards": [
       [
         "Build and evolve the platform",
-        "Co-owned application and GPU cluster lifecycle across NVIDIA V100, A10G, L40S and A100 environments. Kept infrastructure changes connected to the workloads using it."
+        "Owned GPU cluster build, upgrades, patching and operations across NVIDIA V100, A10G, L40S and A100 environments. Operated GPU Operator, Karpenter and cluster networking."
       ],
       [
-        "Onboard and scale workloads",
-        "Partnered with developers on GitOps onboarding. Owned model-weight serving and lifecycle tooling, including a Go checksum CLI, and wrote or modified Go tooling for Kafka topic/user resource generation."
+        "Make model delivery repeatable",
+        "Personally built model-weight staging and checksum-validation tooling. Connected GPU allocation, tensor parallelism, storage mounts and startup readiness with deployment configuration."
       ],
       [
-        "Operate across system boundaries",
-        "Co-owned observability and incident response. Followed failures through network PCAP, p95/p99 latency, ingestion and request queues, and Kubernetes persistent storage."
+        "Plan capacity and resolve incidents",
+        "Worked with customers on workload and capacity needs. Used DCGM, Prometheus/Grafana and application signals to investigate across GPU resources, networking, queues and persistent storage."
       ]
     ],
     "stages": [
       [
-        "Provision and evolve",
-        "Application services and GPU model hosting ran in separate Kubernetes environments. I co-owned setup, upgrades, patching and operations, connecting cluster lifecycle work to workload requirements."
+        "Build and evolve",
+        "Application services and GPU model hosting ran in separate Kubernetes environments. I owned GPU cluster build and lifecycle, while co-owning the wider application platform. Node upgrades and patching had to account for model reload time and serving availability."
       ],
       [
         "Onboard and release",
-        "I worked closely with developers on GitOps onboarding across Dev/UAT/Prod. For model serving, I owned weight onboarding and lifecycle tooling: staging artifacts, validating checksums, configuring mounts and making deployments repeatable."
+        "I personally built model-onboarding tooling to stage weights from S3 to FSx, validate checksums and mount artifacts read-only. Helm/Argo CD delivered model workloads; Flux/Kustomize supported application GitOps onboarding."
       ],
       [
-        "Support capacity and connectivity",
-        "The platform used node provisioning, workload autoscaling, GPU enablement, service networking and policy controls. These components supported different cluster generations and workload types; the stack below shows the platform capabilities around my engineering work."
+        "Plan capacity and connectivity",
+        "I operated Karpenter and GPU Operator and planned capacity against model placement and customer workloads. Calico and Cilium appeared in different cluster generations; networking, DNS and storage had to be ready before a serving endpoint was useful."
       ],
       [
-        "Observe and investigate",
-        "Production diagnosis crossed infrastructure and application boundaries: network captures, p95/p99 latency, request and ingestion backlogs, and PVC/storage failures. Logging, dashboards, alerts and operational tooling made those boundaries visible."
+        "Observe and recover",
+        "DCGM GPU metrics, Prometheus/Grafana, network captures, p95/p99 latency and queue/storage signals supported investigation. I led production recovery and coordinated root-cause analysis and corrective actions."
       ]
     ],
     "stack": [
       [
         "Deployment and GitOps",
-        "FluxCD · Helm · Kustomize · Argo CD · Flagger"
+        "Flux · Helm · Kustomize · Argo CD"
       ],
       [
-        "Capacity and GPU enablement",
-        "Karpenter · KEDA · HPA · Prometheus Adapter · NVIDIA GPU Operator"
+        "GPU enablement and capacity",
+        "NVIDIA GPU Operator · Karpenter · managed node groups; KEDA, HPA and Prometheus Adapter supported workload-specific scaling."
       ],
       [
         "Networking and service connectivity",
-        "Istio ambient mesh · NGINX Ingress · Envoy Gateway · AWS VPC CNI · Calico · Cilium"
+        "Calico in older configurations; Cilium hybrid mode in newer environments. Wider platform components included AWS VPC CNI, NGINX ingress and Istio."
       ],
       [
-        "Observability",
-        "Prometheus Operator · Grafana"
+        "GPU and platform observability",
+        "DCGM exporter · Prometheus Operator · Grafana · Kubernetes metrics and alerting · Splunk OpenTelemetry integration"
       ],
       [
         "Security and persistent storage",
-        "cert-manager · OPA Gatekeeper · Kubernetes RBAC · NetworkPolicy · Amazon EFS CSI"
+        "cert-manager · Kubernetes RBAC · NetworkPolicy · FSx for Lustre model storage · PVCs and CSI integrations; Gatekeeper and EFS/EBS CSI appeared in wider platform configurations."
+      ],
+      [
+        "Distributed serving support",
+        "LeaderWorkerSet model-serving templates, Ray head/worker startup and KubeRay deployment configuration in adjacent infrastructure."
       ]
     ],
-    "scope": "Tools reflect repository-backed platform configuration across different clusters and generations. Personal ownership is stated separately. Calico and Cilium were used in different cluster configurations; the diagram groups capabilities rather than asserting one identical installation everywhere."
+    "scope": "I owned GPU platform engineering within a team-built AI platform. Tools varied by environment and cluster generation; this is a view of the operational ecosystem, not one identical installation everywhere."
   },
   "inference_story": {
-    "title": "Building deeper inference engineering expertise.",
-    "intro": "My inference engineering foundation comes from production platform work. At Apple, I worked alongside developers on an AI serving platform—owning model-weight onboarding and serving tooling, working with vLLM deployment configuration, and co-owning GPU Kubernetes operations.",
-    "learning": "I’m now deepening that foundation through Abi Aryan’s inference engineering course. My focus is understanding how serving behavior connects to GPU memory, prefill and decode, KV-cache management, and latency and throughput tradeoffs.",
-    "contribution": "I can contribute immediately to serving-platform infrastructure, deployment tooling and production troubleshooting, while learning the deeper inference internals as I go. I bring distributed-systems judgment, a habit of investigating across layers, and accountability for production behavior.",
+    "title": "Production serving experience. Deeper inference engineering.",
+    "intro": "My foundation is hands-on production serving infrastructure. At Apple, I owned GPU Kubernetes engineering and personally built model-weight onboarding and serving tooling. I worked with vLLM runtime configuration, GPU memory sizing, tensor parallelism, context limits, LoRA and deployment readiness.",
+    "learning": "I’m now deepening my understanding of inference internals through structured study and practical exercises: prefill and decode, KV-cache behavior, scheduling, and reproducible latency and throughput measurement.",
+    "contribution": "I bring immediate ownership of serving-platform infrastructure, tooling, capacity planning and production troubleshooting. I am building on that experience to take on deeper inference-performance work, with the same habit of investigating across system boundaries.",
     "production": [
-      "Model-weight staging and checksum validation",
-      "vLLM runtime and deployment configuration",
-      "GPU Kubernetes operations and serving-platform collaboration"
+      "GPU Kubernetes build, lifecycle and production operations",
+      "Personally built artifact staging, checksum validation and deployment tooling",
+      "vLLM runtime configuration, tensor parallelism and serving readiness",
+      "DCGM monitoring, capacity planning and production incident response"
     ],
     "study": [
       "Prefill/decode and KV-cache behavior",
       "Serving performance and reproducible benchmarking",
       "Next tools to explore: GenAI-Perf, SGLang and LMCache"
     ],
-    "scope": "Apple experience covers serving-platform infrastructure and tooling. Deeper inference optimization and the next-focus tools are part of my ongoing learning."
+    "scope": "Production experience covers the serving platform and its tooling. Advanced inference optimization, kernel-level work and new benchmarking tools remain separate learning areas."
   },
   "cloud_native_story": {
     "title": "From a blank cloud environment to a platform ready for production.",
@@ -972,7 +1013,7 @@
       [
         "APPLE / CO-OWNED PLATFORM ENGINEERING",
         "AI infrastructure through production operations",
-        "Co-owned the enterprise AI platform’s infrastructure lifecycle, from cloud foundations and application/GPU Kubernetes setup to upgrades, patching, GitOps onboarding, observability and incident response. Owned model-weight tooling, Solr infrastructure and performance engineering, and Mac document-conversion infrastructure."
+        "Co-owned the enterprise AI platform with the team. Personally owned GPU Kubernetes build, lifecycle, tooling, capacity planning and production incidents, plus model-weight tooling, Solr infrastructure and Mac document-conversion infrastructure. Partnered with developers on application GitOps onboarding and observability."
       ]
     ],
     "scope": "The recovery figures describe the Freddie Mac DR environment. Apple responsibilities distinguish individually owned systems from platform infrastructure co-owned with the team."

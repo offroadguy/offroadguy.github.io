@@ -12,7 +12,7 @@
 <path d="M704 226H727" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="734" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="734" y="173" width="5" height="106" rx="2" fill="#087c75"/>
 <text x="752" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Capture systems</text>
-<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">40 Gb/s technology test bed</text>
+<text x="752" y="241" font-family="Arial,sans-serif" font-size="17" font-weight="400" fill="#4e6570">160 Gb/s packet-capture testbed</text>
 <path d="M1049 226H1072" stroke="#388884" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1079" y="173" width="312" height="106" rx="12" fill="white" stroke="#cfdddd"/><rect x="1079" y="173" width="5" height="106" rx="2" fill="#087c75"/>
 <text x="1097" y="208" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1b3442">Packet storage</text>

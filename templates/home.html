@@ -1,0 +1,126 @@
+<main id="main" class="portfolio-home">
+  <section class="home-hero">
+    <div class="home-wrap hero-layout">
+      <div class="hero-story">
+        <div class="byline"><img src="assets/venkata-ganji.jpg" alt="" width="36" height="36"> Venkata Ganji <span>·</span> AI infrastructure engineer</div>
+        <h1>From cloud to<br><em>production inference.</em></h1>
+        <p>At Apple through Mphasis, I owned GPU Kubernetes, model onboarding tooling, and Solr infrastructure. I co-owned the enterprise AI platform that connected model serving, retrieval, and application teams.</p>
+        <div class="hero-actions"><a class="primary-link" href="#work">Explore the case studies <span aria-hidden="true">↓</span></a><a href="downloads/Venkata_Ganji_Resume.pdf">Résumé <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="system-flow">
+        <div class="flow-header"><span>Cloud → GPU → Serving → Search</span><span class="flow-live" aria-hidden="true"><i></i> Platform flow</span></div>
+        <div class="cloud-layer">
+          <div class="flow-label">CLOUD &amp; INFRASTRUCTURE</div>
+          <div class="provider-logos">
+            <span><img src="assets/technologies/aws.png" alt="">AWS</span>
+            <span><img src="assets/technologies/azure.png" alt="">Azure</span>
+            <span><img src="assets/technologies/gcp.png" alt="">Google Cloud</span>
+            <span><img src="assets/technologies/alibabacloud.png" alt="">Alibaba Cloud</span>
+          </div>
+        </div>
+        <div class="signal-wire" aria-hidden="true"></div>
+        <div class="flow-node fleet-node"><span class="flow-icon"><img src="assets/technologies/kubernetes.png" alt=""></span><div><strong>GPU Kubernetes</strong><small>GPU Operator · Karpenter · DCGM</small></div><img class="node-brand" src="assets/technologies/nvidia.png" alt="NVIDIA"></div>
+        <div class="signal-wire" aria-hidden="true"></div>
+        <div class="flow-node serving-node"><span class="flow-icon"><img src="assets/technologies/vllm.png" alt=""></span><div><strong>vLLM model serving</strong><small>Stage → validate → evaluate → deploy</small></div><span class="model-pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="signal-wire" aria-hidden="true"></div>
+        <div class="data-layer">
+          <div><img src="assets/technologies/solr.png" alt=""><div><strong>Apache Solr</strong><small>Search &amp; embeddings</small></div></div>
+          <div><img src="assets/technologies/elasticsearch.png" alt=""><div><strong>Elasticsearch</strong><small>Search &amp; analytics</small></div></div>
+        </div>
+        <figcaption>Cloud experience spans multiple engagements. The flow shows representative infrastructure and workloads.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <dl class="home-wrap outcome-line">
+    <div><dt>15+</dt><dd>GPU and platform Kubernetes clusters across environments</dd></div>
+    <div><dt>~7.0s → ~1.9s</dt><dd>Solr vector-query latency</dd></div>
+    <div><dt>15,000+</dt><dd>Embedding collections across five Solr clusters in one region</dd></div>
+    <div><dt>$500K+</dt><dd>Combined Solr and Mac infrastructure savings</dd></div>
+  </dl>
+
+  <section class="home-wrap story-section" id="platform">
+    <div class="section-label">APPLE · GPU PLATFORM &amp; MODEL SERVING</div>
+    <div class="story-grid" id="kubernetes">
+      <div class="story-copy">
+        <h2>Getting models from weights to production</h2>
+        <p>I owned the GPU Kubernetes cluster lifecycle, capacity planning, scaling, and production incident response. I built API-backed onboarding tooling that staged weights from S3 to FSx, verified checksums, and integrated with Argo CD and Flux.</p>
+        <p>I ran pre-onboarding inference evaluations with a Principal Development Engineer. We varied input and output length, concurrency, batching, precision, KV-cache settings, and GPU parallelism, then measured latency, throughput, memory, errors, cost, and output quality.</p>
+        <ul class="word-strip" aria-label="Representative GPU platforms"><li>V100</li><li>A10G</li><li>L40S</li><li>A100</li><li>GB300</li></ul>
+        <a class="story-link" href="cases/genai.html#kubernetes">Read the Apple platform case <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="model-panel" id="inference">
+        <div class="section-label">REPRESENTATIVE MODEL WORKLOADS</div>
+        <ul class="model-list">
+          <li><span class="model-mark qwen" aria-hidden="true">Q</span><span><strong>Qwen3-235B-A22B</strong><small>Qwen</small></span></li>
+          <li><span class="model-mark mixtral" aria-hidden="true">M</span><span><strong>Mixtral-8x22B-Instruct-v0.1</strong><small>Mistral AI</small></span></li>
+          <li><span class="model-mark gpt" aria-hidden="true">G</span><span><strong>gpt-oss-120b</strong><small>OpenAI</small></span></li>
+          <li><span class="model-mark foundation" aria-hidden="true">A</span><span><strong>Apple foundation models</strong><small>Enterprise platform workloads</small></span></li>
+        </ul>
+        <p>Serving work included general-purpose, reasoning, coding, and vision or multimodal models.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-band" id="search">
+    <div class="home-wrap story-section story-grid">
+      <div class="cluster-visual" data-animate-clusters>
+        <div class="cluster-heading"><img src="assets/technologies/solr.png" alt=""><div><strong>Solr embedding footprint</strong><small>Five clusters in one region</small></div></div>
+        <div class="cluster-row" aria-hidden="true">
+          <span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span><span><i></i><i></i><i></i></span>
+        </div>
+        <div class="cluster-legend"><strong>15,000+</strong> embedding collections</div>
+        <div class="latency-comparison" aria-label="Approximate Solr vector-query latency dropped from 7.0 seconds to 1.9 seconds">
+          <div><span>Before</span><i class="before-bar" aria-hidden="true"></i><strong>~7.0s</strong></div>
+          <div><span>After</span><i class="after-bar" aria-hidden="true"></i><strong>~1.9s</strong></div>
+        </div>
+      </div>
+      <div class="story-copy">
+        <div class="section-label">APPLE · DISTRIBUTED SEARCH &amp; RETRIEVAL</div>
+        <h2>Making vector search faster at fleet scale</h2>
+        <p>I owned Solr 9.9 infrastructure, provisioning, infrastructure as code, and performance across roughly 200 nodes in multiple regions. I also co-owned Elasticsearch and Milvus infrastructure with the team.</p>
+        <p>I led the migration of roughly 200 Solr nodes to Graviton, using validation tooling to preserve query throughput. The migration reduced that infrastructure cost by <strong>19.8%, or about $266K annualized</strong>.</p>
+        <div class="inline-brands" id="technology"><span><img src="assets/technologies/solr.png" alt="">Solr</span><span><img src="assets/technologies/elasticsearch.png" alt="">Elasticsearch</span><span>Milvus</span></div>
+        <a class="story-link" href="cases/genai.html#outcomes">Explore the search results <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-wrap story-section story-grid recovery-layout" id="cloud-native">
+    <div class="story-copy">
+      <div class="section-label">FREDDIE MAC · HIGH AVAILABILITY &amp; DISASTER RECOVERY</div>
+      <h2>Modernizing a platform that had to stay recoverable</h2>
+      <p>Through Cloudwick, I helped replace manual VMware workflows with cloud-native infrastructure and automated deployments. I led mortgage-document migration work from Hadoop and Solr to Elasticsearch/OpenSearch and S3, and built recovery automation using Airflow and Python.</p>
+      <p>The modernization included active-active US East and West infrastructure. The delivered hybrid-cloud recovery environment achieved an approximately <strong>15-minute RPO</strong> and <strong>2-hour RTO</strong>.</p>
+      <a class="story-link" href="cases/cloud-foundations.html#platform-lifecycle">Read the cloud and recovery case <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="recovery-visual" aria-label="US East and US West active-active infrastructure with separate recovery workflows">
+      <div class="region-route"><span>US East</span><b aria-hidden="true">⇄</b><span>US West</span></div>
+      <p>Cross-region replication · Snapshots · Restore automation</p>
+      <div class="recovery-metrics"><div><strong>~15 min</strong><small>Recovery point</small></div><div><strong>~2 hr</strong><small>Recovery time</small></div></div>
+    </div>
+  </section>
+
+  <section class="home-wrap story-section work-ledger" id="work">
+    <div class="section-label">ENGINEERING CASE STUDIES</div>
+    <h2>Systems I helped put into production</h2>
+    <div class="editorial-list">
+      <a href="cases/genai.html"><strong>Enterprise AI serving</strong><span>Apple · GPU fleet, model lifecycle, retrieval, and production operations</span><b aria-hidden="true">↗</b></a>
+      <a href="cases/cloud-foundations.html"><strong>Cloud platforms &amp; recovery</strong><span>Freddie Mac · Infrastructure as code, high availability, and disaster recovery</span><b aria-hidden="true">↗</b></a>
+      <a href="cases/migration.html"><strong>Mission-critical data migration</strong><span>Freddie Mac · Document archives, search modernization, and migration tooling</span><b aria-hidden="true">↗</b></a>
+      <a href="cases/cyber-data.html"><strong>Cyber Data Lake</strong><span>Cloudwick · Three racks, a 160 Gb/s packet-capture testbed, and correlated telemetry</span><b aria-hidden="true">↗</b></a>
+    </div>
+  </section>
+
+  <section class="lab-band" id="about">
+    <div class="home-wrap story-grid">
+      <div><div class="section-label">INDEPENDENT PROJECT</div><h2>Inference Lab</h2></div>
+      <div><p>An open-source lab for reproducible vLLM serving experiments. It onboards Hugging Face models, runs them on Modal GPUs, compares latency and throughput, and records configuration and cleanup evidence. Four Qwen2.5 sizes passed serving smoke tests.</p><a class="story-link" href="https://github.com/offroadguy/inference-lab">Explore Inference Lab on GitHub <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+  <section class="home-wrap story-section story-grid foundations" aria-labelledby="foundations-title">
+    <div><div class="section-label">CLOUDWICK · 2014–2016</div><h2 id="foundations-title">The distributed systems foundation</h2></div>
+    <div><p>Earlier at Cloudwick, I operated Amobee’s Hadoop and HBase environments at up to <strong>~400 nodes per cluster and 30 PB total capacity</strong>. At Limelight Networks, I designed recovery for a Hadoop billing platform and operated an <strong>~80-node video analytics cluster</strong>.</p>
+    <p class="profile-facts">M.S. in Computer Science, Texas A&amp;M University–Kingsville · Nebius AI CloudOps Engineer Certification</p></div>
+  </section>
+</main>

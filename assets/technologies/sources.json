@@ -108,5 +108,13 @@
   "supermicro": {
     "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/11.0.0/icons/supermicro.svg",
     "ok": true
+  },
+  "elasticsearch": {
+    "url": "https://cdn.simpleicons.org/elasticsearch/137F73",
+    "ok": true
+  },
+  "alibabacloud": {
+    "url": "https://cdn.simpleicons.org/alibabacloud/FF6A00",
+    "ok": true
   }
 }

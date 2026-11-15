@@ -32,7 +32,7 @@
       ],
       "problem": "Enterprise teams needed a shared platform for document Q&A, enterprise chat, incident intelligence and coding-agent workflows. These experiences depended on more than a model endpoint: documents had to be ingested, transformed and indexed; retrieval had to remain responsive; and model deployments needed repeatable artifact and runtime configuration. Different workloads also placed different demands on CPU, storage and GPU capacity.",
       "ownership": [
-        "Owned GPU Kubernetes platform build, lifecycle, tooling, capacity planning and production operations on AWS EKS, including upgrades, patching and incident response. Operated NVIDIA V100, A10G, L40S and A100 infrastructure.",
+        "Owned GPU Kubernetes platform build, lifecycle, tooling, capacity planning and production operations on AWS EKS, including upgrades, patching and incident response. Operated NVIDIA V100, A10G, L40S, A100, and GB300 infrastructure.",
         "Operated NVIDIA GPU Operator, Karpenter and cluster networking across environments, including Calico/Cilium. Connected GPU workload placement and cluster lifecycle decisions to model-serving requirements.",
         "Designed and built model-weight serving and onboarding tooling: Helm/Argo CD, vLLM, S3-to-FSx staging, checksum validation and read-only mounts. Worked with tensor parallelism, GPU memory sizing, context limits and LoRA configuration.",
         "Owned Solr infrastructure, performance, IaC and lifecycle tooling at approximately 200-node, multi-region scale. Supported 15,000+ embedding collections across five clusters in one region; co-owned Elasticsearch and Milvus.",
@@ -78,7 +78,8 @@
         "Reduced vector-query latency from approximately 7.0 seconds to 1.9 seconds through JVM/GC, operating-system, cache, query and index tuning.",
         "Migrated 200 Solr nodes to Graviton/ARM64 while preserving query throughput, reducing cost 19.8% ($266K+ annualized).",
         "Production configurations specified 226 application-cluster workers across two AWS regions and 105 West-region document-processing replicas for parsing, chunking and PDF conversion. These are configured desired counts, not a live fleet inventory.",
-        "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion. The combined figure is not stated as an annual total."
+        "Delivered $500K+ in combined Solr and Mac infrastructure savings. Component rates: $266K+ annualized from Solr and approximately $16K/month from EC2 Mac document conversion. The combined figure is not stated as an annual total.",
+        "Operated across 15+ GPU and platform Kubernetes clusters with the team. GPU environments included NVIDIA V100, A10G, L40S, A100, and GB300 infrastructure."
       ],
       "operations": "I followed production failures across model artifacts, serving workloads, Kubernetes, storage and network dependencies. When incomplete model staging blocked checksum validation and serving readiness, I restored validated artifacts and made successful staging and validation a deployment prerequisite. I also diagnosed embedding-service timeouts caused by worker conntrack exhaustion, addressing connection pooling, bounded concurrency and conntrack sizing. DCGM GPU telemetry, Prometheus/Grafana, PCAP and application latency helped connect infrastructure behavior to user impact.",
       "scope": "Sanitized logical architecture, with personal and team ownership distinguished. Configured worker and replica counts describe desired configuration rather than a live fleet inventory. Model names describe platform serving scope, not training ownership. Latency figures refer to vector queries; no LLM throughput, TTFT or GPU-utilization improvement is claimed.",
@@ -134,9 +135,9 @@
         ]
       ],
       "technology_key": "Apple",
-      "model_platform": "General-purpose, reasoning, coding and vision/multimodal workloads, including Apple foundation models, Qwen, Mixtral and Pixtral.",
-      "model_scope": "Model families describe serving-platform experience, not model-training or inference-engine authorship. Deeper inference optimization is an ongoing learning focus.",
-      "cloud_experience": "AWS infrastructure and GCP Vertex AI platform engineering; production PostgreSQL experience across Apple, Freddie Mac and Cloudwick."
+      "model_platform": "Representative workloads included Apple foundation models, Qwen3-235B-A22B, Mixtral-8x22B-Instruct-v0.1, and gpt-oss-120b. The platform served general-purpose, reasoning, coding, and vision or multimodal workloads.",
+      "model_scope": "I partnered with a Principal Development Engineer on pre-onboarding inference evaluations. We varied request rate, input and output lengths, batching, precision and quantization, KV-cache settings, scheduling, and GPU parallelism. We measured latency, throughput, memory, errors, cost, and output quality.",
+      "cloud_experience": "I worked with AWS and GCP Vertex AI, and built tooling for Apple private cloud and Alibaba Cloud. My broader Cloudwick experience also included production Azure."
     },
     {
       "id": "cyber-data",
@@ -156,8 +157,8 @@
           "Capture and integration test bed"
         ],
         [
-          "40 Gb/s",
-          "Packet-capture technology tuned"
+          "160 Gb/s",
+          "Packet-capture testbed"
         ],
         [
           "4 source types",
@@ -167,9 +168,10 @@
       "problem": "Security data arrived in different shapes and at different rates: raw packet capture, NetFlow, application logs and firewall events. The engineering challenge was to collect those signals, move them into distributed processing and storage, and make them useful together. A packet-capture path also has different bottlenecks from a log pipeline, so testing needed to span NICs, disks, network fabrics, brokers and analytics services.",
       "ownership": [
         "Implemented collection of PCAP, NetFlow, application logs and firewall events to support a correlated cyber data lake.",
-        "Owned Supermicro servers, high-throughput NICs, IXIA and ToR / supervisor-switch integration in the three-rack capture/replay environment; tuned 40 Gb/s capture technology.",
+        "Owned Supermicro servers, high-throughput NICs, IXIA and ToR / supervisor-switch integration in the three-rack capture/replay environment; tuned the testbed for 160 Gb/s packet capture.",
         "Owned operational and performance tooling across capture, hardware and distributed data; engineered Corelight/IXIA integrations and operated Hadoop, Kafka, Spark, Solr, HBase and Elasticsearch.",
-        "Built Prometheus monitoring for collector agents and automated cloud/on-premises deployment using CloudFormation, Ansible, Jenkins, GitLab, Kickstart, Puppet and Python APIs."
+        "Built Prometheus monitoring for collector agents and automated cloud/on-premises deployment using CloudFormation, Ansible, Jenkins, GitLab, Kickstart, Puppet and Python APIs.",
+        "Set up PXE provisioning for Supermicro hosts, worked with BGP at the top-of-rack layer, and integrated IXIA, SolarCapture NICs, packet brokers, and IDS/IPS telemetry."
       ],
       "flow": [
         [
@@ -205,8 +207,9 @@
       ],
       "results": [
         "Delivered a three-rack environment for packet capture/replay and security-tool integration.",
-        "Deployed and tuned 40 Gb/s capture technology across hardware and software boundaries; this is a technology rating, not a measured sustained end-to-end ingestion result.",
-        "Integrated multiple telemetry families and automated deployment and operational monitoring for the product's distributed stack."
+        "Built and tuned the three-rack packet-capture testbed for 160 Gb/s. The figure describes the testbed.",
+        "Integrated multiple telemetry families and automated deployment and operational monitoring for the product's distributed stack.",
+        "Correlated PCAP, NetFlow, Corelight, application logs, and firewall events. Built Prometheus collector monitoring and tuned Solr search across a Hadoop, Kafka, Spark, HBase, and Elasticsearch stack."
       ],
       "operations": "This work required following a performance symptom across system boundaries: capture hardware, network links, storage media, the aggregation process, Kafka and HDFS. The architecture set is useful for discussing how I isolate bottlenecks and make a complex platform repeatable to deploy and support.",
       "scope": "The walkthrough diagrams are simplified redraws; low-resolution previews of the supplied originals are available separately. Gateway capacities and test configurations are not promoted to production benchmarks. The separate Amorphic cloud reference is dated June 2019 and credits a team author; it is included only as product context, not as evidence that I personally designed that entire later architecture. Telemetry here does not mean OpenTelemetry.",
@@ -593,7 +596,7 @@
         "Solr"
       ],
       [
-        "",
+        "elasticsearch",
         "Elasticsearch"
       ],
       [
@@ -897,14 +900,14 @@
   ],
   "email": "venkataganji.careers@gmail.com",
   "phone": "925-272-9870",
-  "education": "Master’s in Computer Science, Texas A&M University, 2014; additional graduate study at Montana State University, 15 credits.",
+  "education": "Master of Science in Computer Science, Texas A&M University–Kingsville, May 2014. Additional graduate study at Montana State University, 15 credits.",
   "kubernetes_story": {
     "title": "The Kubernetes foundation behind AI serving.",
     "intro": "At Apple, I owned the GPU Kubernetes foundation on EKS: cluster build, lifecycle, tooling, capacity planning and production incidents. I also co-owned the application platform around it, partnering with developers on ingestion and inference GitOps onboarding.",
     "cards": [
       [
         "Build and evolve the platform",
-        "Owned GPU cluster build, upgrades, patching and operations across NVIDIA V100, A10G, L40S and A100 environments. Operated GPU Operator, Karpenter and cluster networking."
+        "Owned GPU cluster build, upgrades, patching and operations across NVIDIA V100, A10G, L40S, A100, and GB300 environments. Operated GPU Operator, Karpenter and cluster networking."
       ],
       [
         "Make model delivery repeatable",

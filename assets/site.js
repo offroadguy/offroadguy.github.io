@@ -40,3 +40,14 @@ if (platformMap) {
     observer.observe(platformMap);
   }
 }
+
+const clusters = document.querySelector('[data-animate-clusters]');
+if (clusters && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting)) {
+      clusters.classList.add('cluster-active');
+      observer.disconnect();
+    }
+  }, {threshold: 0.28});
+  observer.observe(clusters);
+}

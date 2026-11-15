@@ -6,7 +6,7 @@ Four case studies covering enterprise GenAI, cyber telemetry, mission-critical d
 
 ## Update the site
 
-1. Edit `content.json` for case-study narratives. Preserve employment relationships, attribution and metric scope.
+1. Edit `templates/home.html` for the homepage and `content.json` for case-study narratives. Preserve employment relationships, attribution and metric scope.
 2. Run `python3 scripts/build.py` to rebuild HTML and supporting SVGs. The detailed GenAI SVG is a separately maintained sanitized artifact.
 3. Preview with `python3 -m http.server 8765`; check desktop, mobile, links, downloads and diagram controls.
 4. To regenerate the PDF pack, render SVGs to PNGs in `.build/` using Sharp, then run `scripts/build_pack.py` with Python, ReportLab and Pillow. The PDF builder uses Arial from macOS.
@@ -16,7 +16,7 @@ The site is static HTML/CSS/JavaScript and has no runtime dependencies, analytic
 
 ## Attribution and scope
 
-Experience and outcomes are based on Venkata Ganji's resume and confirmations. Apple was a contract through Mphasis; Freddie Mac and other client work was through Cloudwick. The later Amorphic architecture is explicitly team context. The 40 Gb/s label denotes capture technology, not a measured end-to-end benchmark. The 30 PB headline denotes total capacity across the earlier Hadoop environments.
+Experience and outcomes are based on Venkata Ganji's resume and confirmations. Apple was a contract through Mphasis; Freddie Mac and other client work was through Cloudwick. The later Amorphic architecture is explicitly team context. The 160 Gb/s figure describes the tuned packet-capture testbed. The diagram does not give an end-to-end ingest benchmark. The 30 PB headline denotes total capacity across the earlier Hadoop environments.
 
 Version 2.2.0 · October 2026
 
